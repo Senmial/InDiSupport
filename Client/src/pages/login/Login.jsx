@@ -9,7 +9,7 @@ import bottomcircle from "../../assets/images/bottomcircle.svg";
 
 const Login = () => {
   return (
-    <div className="flex justify-center min-h-screen items-center">
+    <div className="flex justify-center min-h-screen  items-center">
       <div className="relative border w-2/5 border-[#380445]-500/75  bg-white  rounded-xl overflow-hidden drop-shadow-md">
       <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <div className="flex flex-col justify-center items-center">
@@ -20,10 +20,10 @@ const Login = () => {
 
         <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
           <Link className="underline text-[#41788E] ">Login</Link>
-          <Link className="text-[#D9D9D9]">Sign Up</Link>
+          <Link className="text-[#D9D9D9] font-light">Sign Up</Link>
         </div>
         <div className="w-8/12 pt-4">
-          <div className=" border-2 rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
+          <div className=" border rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
             <svg
               className="w-6"
               viewBox="0 0 18 14"
@@ -38,12 +38,12 @@ const Login = () => {
             <input
               type="text"
               placeholder="Email"
-              className=" outline-none w-full font-light text-[0.9rem]"
+              className=" outline-none w-full font-thin text-[0.8rem]"
             />
           </div>
         </div>
         <div className="w-8/12 pt-4">
-          <div className=" border-2 rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
+          <div className=" border rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
             <svg
               className="w-6"
               viewBox="0 0 20 20"
@@ -62,7 +62,7 @@ const Login = () => {
             <input
               type="text"
               placeholder="Password"
-              className=" outline-none w-full font-light text-[0.9rem]"
+              className="  outline-none w-full font-thin text-[0.8rem]"
             />
           </div>
         </div>
