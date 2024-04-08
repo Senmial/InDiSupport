@@ -8,7 +8,7 @@ import bottomcircle from "../../assets/images/bottomcircle.svg";
 
 const signup = () => {
     return (
-        <div className="flex justify-center min-h-screen  items-center">
+        <div className="flex justify-center min-h-screen bg-[#744F7D] items-center">
           <div className="relative border w-2/5 border-[#380445]-500/75  bg-white  rounded-xl overflow-hidden drop-shadow-md">
           <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
             <div className="flex flex-col justify-center items-center">
