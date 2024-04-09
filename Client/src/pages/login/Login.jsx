@@ -9,8 +9,8 @@ import bottomcircle from "../../assets/images/bottomcircle.svg";
 
 const Login = () => {
   return (
-    <div className="flex justify-center min-h-screen  items-center">
-      <div className="relative border w-2/5 border-[#380445]-500/75  bg-white  rounded-xl overflow-hidden drop-shadow-md">
+    <div className="flex justify-end min-h-screen bg-[#D5CBD8]  items-center">
+      <div className="relative border w-2/5 border-[#380445]-500/75  bg-white  rounded-xl overflow-hidden drop-shadow-md mr-5">
       <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <div className="flex flex-col justify-center items-center">
         <img src={login1} className="w-2/5 pt-4" alt="" />
