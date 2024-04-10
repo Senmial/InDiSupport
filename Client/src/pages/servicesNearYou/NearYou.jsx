@@ -30,7 +30,7 @@ const NearYou = () => {
     </div>
     </section>
     <section className='flex justify-center'>
-      <div className='bg-[#D5CBD8] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+      <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
         <p className='text-[#41788E]'>Masbith Care</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -53,7 +53,7 @@ const NearYou = () => {
     </section>
     <br />
     <section className='flex justify-center'>
-    <div className='bg-[#D5CBD8] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
         <p className='text-[#41788E]'>Lewan Training Institute</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -76,7 +76,7 @@ const NearYou = () => {
     </section>
 <br />
     <section className='flex justify-center'>
-    <div className='bg-[#D5CBD8] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
         <p className='text-[#41788E]'>Alliant Union Services</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -100,7 +100,7 @@ const NearYou = () => {
     <br />
     
     <section className='flex justify-center'>
-    <div className='bg-[#D5CBD8] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
         <p className='text-[#41788E]'>Arm The Child Foundation</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
