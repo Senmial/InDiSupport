@@ -6,18 +6,22 @@ import PersonIcon from "../../assets/images/personIcon.svg";
 import PhoneIcon from "../../assets/images/phoneIcon.svg";
 import LikeIcon from "../../assets/images/likeIcon.svg";
 import ScholarHat from "../../assets/images/scholarHat.svg";
+import luckycharm from "../../assets/images/luckycharm.svg";
+import bottomcircle from "../../assets/images/bottomcircle.svg";
+
+
 
 
 const NearYou = () => {
   return (
-    <div className='bg-[#380445] '>
+    <div className='bg-[#FFFFFF] '>
     <Navbar/>
     <div>
-<img src={MapImg} className='drop-shadow' alt="" />
+<img src={MapImg} className='drop-shadow mt-3 ' alt="" />
     </div>
-    <section className='flex justify-around items-center m-5 '>
+    <section className='flex justify-around items-center m-5 mt-10'>
       <div>
-    <p className='font-medium text-[#ffffff]'>Services Near You</p>
+    <p className='font-medium text-[#380445]'>Services Near You</p>
     </div>
     <div className='flex font-light text-xs text-[#41788E]'>
       <select name="Sort" id="Sort" className='rounded-full'>Sort By
@@ -30,7 +34,8 @@ const NearYou = () => {
     </div>
     </section>
     <section className='flex justify-center'>
-      <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+      <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2'>
+      <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <p className='text-[#41788E]'>Masbith Care</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -48,12 +53,14 @@ const NearYou = () => {
         </div>
         <div className='flex justify-end' >
         <img src={LikeIcon} alt="" />
+        <img src={bottomcircle} className=" absolute bottom left-0 rounded-bl-lg" alt="" />
         </div>
       </div>
     </section>
     <br />
     <section className='flex justify-center'>
-    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2 '>
+    <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <p className='text-[#41788E]'>Lewan Training Institute</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -71,12 +78,14 @@ const NearYou = () => {
         </div>
         <div className='flex justify-end' >
         <img src={LikeIcon} alt="" />
+        <img src={bottomcircle} className=" absolute bottom left-0 rounded-bl-lg" alt="" />
         </div>
       </div>
     </section>
 <br />
     <section className='flex justify-center'>
-    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md  overflow-hidden border-2'>
+    <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <p className='text-[#41788E]'>Alliant Union Services</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -94,13 +103,15 @@ const NearYou = () => {
         </div>
         <div className='flex justify-end' >
         <img src={LikeIcon} alt="" />
+        <img src={bottomcircle} className=" absolute bottom left-0 rounded-bl-lg" alt="" />
         </div>
       </div>
     </section>
     <br />
     
     <section className='flex justify-center'>
-    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md '>
+    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2'>
+    <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <p className='text-[#41788E]'>Arm The Child Foundation</p>
           <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
           <div className='flex gap-5'>
@@ -118,6 +129,7 @@ const NearYou = () => {
         </div>
         <div className='flex justify-end' >
         <img src={LikeIcon} alt="" />
+        <img src={bottomcircle} className=" absolute bottom left-0 rounded-bl-lg" alt="" />
         </div>
       </div>
     </section>
