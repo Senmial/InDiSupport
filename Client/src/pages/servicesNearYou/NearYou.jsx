@@ -14,14 +14,14 @@ import bottomcircle from "../../assets/images/bottomcircle.svg";
 
 const NearYou = () => {
   return (
-    <div className='bg-[#FFFFFF] '>
+    <div className='bg-[#380445] '>
     <Navbar/>
     <div>
-<img src={MapImg} className='drop-shadow mt-3 ' alt="" />
+<img src={MapImg} className='drop-shadow ' alt="" />
     </div>
     <section className='flex justify-around items-center m-5 mt-10'>
       <div>
-    <p className='font-medium text-[#380445]'>Services Near You</p>
+    <p className='font-medium text-[#FFFFFF]'>Services Near You</p>
     </div>
     <div className='flex font-light text-xs text-[#41788E]'>
       <select name="Sort" id="Sort" className='rounded-full'>Sort By
@@ -52,7 +52,7 @@ const NearYou = () => {
         </div>
         </div>
         <div className='flex justify-end' >
-        <img src={LikeIcon} alt="" />
+        <img src={LikeIcon} className='hover:bg-[#F7A741]' alt="" />
         <img src={bottomcircle} className=" absolute bottom left-0 rounded-bl-lg" alt="" />
         </div>
       </div>

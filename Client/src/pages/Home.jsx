@@ -11,7 +11,7 @@ const Home = () => {
       {/* <img src={helpinghands} className='h-screen w-screen bg-center bg-repeat' alt="" /> */}
       <div className="bg-[#ffffff] border  p-10">
       <div className="flex flex-col justify-center items-center pt-10">
-      <img src={luckycharm} className=" absolute top-14 right-0" alt="" />
+      <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <img src={volunteer4} className="w-3/5 " alt="" />
         <p className="text-[#380445] mt-10 font-medium text-xl uppercase">
           Lending a hand today, goes a long way tomorrow
