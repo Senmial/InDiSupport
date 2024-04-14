@@ -1,10 +1,9 @@
 import React from "react";
-import Navbar from "../../pages/navbar/Navbar";
+import Navbar from "../../components/Navbar.jsx";
 import luckycharm from "../../assets/images/luckycharm.svg";
 import shelterImg from "../../assets/images/shelterImg.svg";
 import FoodBankImg from "../../assets/images/foodBankImg.svg";
 import HealthServicesImg from "../../assets/images/healthServicesImg.svg";
-import volunteer from "../../assets/images/volunteer.svg";
 
 const RequesterHome = () => {
   return (
@@ -21,7 +20,7 @@ const RequesterHome = () => {
           <img src={shelterImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
             <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-            <p className="text-[#F7A741] font-medium font-bold">Shelter</p>
+            <p className="text-[#F7A741] font-bold">Shelter</p>
             <div className="flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4">
               <p className="font-bold">Find available shelters near you. </p>
               <p>
@@ -36,7 +35,7 @@ const RequesterHome = () => {
           <img src={FoodBankImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
             <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-            <p className="text-[#F7A741] font-medium font-bold">Food Banks</p>
+            <p className="text-[#F7A741] font-bold">Food Banks</p>
             <div className="flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4">
               <p className="font-bold">Find available food banks near you.  </p>
               <p>
@@ -50,7 +49,7 @@ const RequesterHome = () => {
           <img src={HealthServicesImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
             <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-            <p className="text-[#F7A741] font-medium font-bold">Health Care</p>
+            <p className="text-[#F7A741] font-bold">Health Care</p>
             <div className="flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4">
               <p className="font-bold">Find available healthcare services near you.  </p>
               <p>

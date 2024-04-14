@@ -1,5 +1,4 @@
 import React from 'react'
-import volunteer4 from "../../assets/images/volunteer4.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

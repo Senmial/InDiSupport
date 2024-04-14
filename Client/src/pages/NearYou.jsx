@@ -1,13 +1,13 @@
 import React from 'react'
-import MapImg from "../../assets/images/map.png";
-import Navbar from "../../pages/navbar/Navbar";
-import BedIcon from "../../assets/images/bedIcon.svg";
-import PersonIcon from "../../assets/images/personIcon.svg";
-import PhoneIcon from "../../assets/images/phoneIcon.svg";
-import LikeIcon from "../../assets/images/likeIcon.svg";
-import ScholarHat from "../../assets/images/scholarHat.svg";
-import luckycharm from "../../assets/images/luckycharm.svg";
-import bottomcircle from "../../assets/images/bottomcircle.svg";
+import MapImg from "../assets/images/map.png";
+import Navbar from "../components/Navbar.jsx";
+import BedIcon from "../assets/images/bedIcon.svg";
+import PersonIcon from "../assets/images/personIcon.svg";
+import PhoneIcon from "../assets/images/phoneIcon.svg";
+import LikeIcon from "../assets/images/likeIcon.svg";
+import ScholarHat from "../assets/images/scholarHat.svg";
+import luckycharm from "../assets/images/luckycharm.svg";
+import bottomcircle from "../assets/images/bottomcircle.svg";
 
 
 
