@@ -1,27 +1,28 @@
 import React from "react";
 import Navbar from "../../components/Navbar.jsx";
-import luckycharm from "../../assets/images/luckycharm.svg";
+import luckycharmTwo from "../../assets/images/luckycharmTwo.svg";
 import shelterImg from "../../assets/images/shelterImg.svg";
 import FoodBankImg from "../../assets/images/foodBankImg.svg";
 import HealthServicesImg from "../../assets/images/healthServicesImg.svg";
+import bgImg from "../../assets/images/bgHelpingHand.jpg";
+
 
 const RequesterHome = () => {
   return (
-    <div >
+    <div className="bg-cover bg-center min-h-screen" style={{backgroundImage: `url(${bgImg})`}}> 
       <Navbar />
       <br />
-
-      <p className="flex flex-col justify-center items-center text-[#380445] font-medium">
+      <p className=" text-[#380445] font-thin text-2xl mr-48 mt-16 flex justify-end">
         Hi there friend, how may we help you today?
       </p>
       <br />
-      <section className="flex flex-col justify-center items-center">
-        <div className="bg-[#380445] p-5 rounded-2xl  w-3/4 drop-shadow-md overflow-hidden border-2 flex ">
+      <section className="flex flex-col justify-center items-end gap-3">
+        <div className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10">
           <img src={shelterImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
-            <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
+            <img src={luckycharmTwo} className=" absolute top-0 right-0" alt="" />
             <p className="text-[#F7A741] font-bold">Shelter</p>
-            <div className="flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4">
+            <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
               <p className="font-bold">Find available shelters near you. </p>
               <p>
                 Find available shelters near you which provide those in need
@@ -31,12 +32,12 @@ const RequesterHome = () => {
           </div>
         </div>
         <br />
-        <div className="bg-[#380445] p-5 rounded-2xl  w-3/4 drop-shadow-md overflow-hidden border-2 flex ">
+        <div className="backdrop-blur-xl p-5 rounded-2xl   w-2/5 shadow-md  overflow-hidden border flex mr-10">
           <img src={FoodBankImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
-            <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
+            <img src={luckycharmTwo} className=" absolute top-0 right-0" alt="" />
             <p className="text-[#F7A741] font-bold">Food Banks</p>
-            <div className="flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4">
+            <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
               <p className="font-bold">Find available food banks near you.  </p>
               <p>
               Find available food banks near you whcih provides food to those in need at specific times and on specific days. 
@@ -45,12 +46,12 @@ const RequesterHome = () => {
           </div>
         </div>
         <br />
-        <div className="bg-[#380445] p-5 rounded-2xl  w-3/4 drop-shadow-md overflow-hidden border-2 flex ">
+        <div className="backdrop-blur-xl p-5 rounded-2xl   w-2/5 shadow-md  overflow-hidden border flex mr-10 ">
           <img src={HealthServicesImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
-            <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
+            <img src={luckycharmTwo} className=" absolute top-0 right-0" alt="" />
             <p className="text-[#F7A741] font-bold">Health Care</p>
-            <div className="flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4">
+            <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
               <p className="font-bold">Find available healthcare services near you.  </p>
               <p>
               Find available healthcare services near you. 

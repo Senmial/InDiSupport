@@ -1,5 +1,5 @@
 import React from 'react'
-import MapImg from "../assets/images/map.png";
+import MapImg from "../assets/images/map.jpg";
 import Navbar from "../components/Navbar.jsx";
 import BedIcon from "../assets/images/bedIcon.svg";
 import PersonIcon from "../assets/images/personIcon.svg";
@@ -8,23 +8,38 @@ import LikeIcon from "../assets/images/likeIcon.svg";
 import ScholarHat from "../assets/images/scholarHat.svg";
 import luckycharm from "../assets/images/luckycharm.svg";
 import bottomcircle from "../assets/images/bottomcircle.svg";
+import bgImg from "../assets/images/bgHelpingHand.jpg";
 
 
 
 
 const NearYou = () => {
   return (
-    <div className='bg-[#380445] '>
+    <div className='bg-[#FFfFff] '>
     <Navbar/>
-    <div>
-<img src={MapImg} className='drop-shadow ' alt="" />
+    <section className='flex justify-center items-center mt-20 p-5 bg-[#744F7D]
+]'>
+    
+<img src={MapImg} className=' w-2/4 rounded-md'  alt="" />
+  
+    <div className='m-20 '>
+      <p className='text-3xl font-thin text-[#FFFFFF]'>Find the nearest facilities and services</p>
+      <p className='text-3xl font-thin text-[#FFFFFF]'>around you!</p>
+      <button className='border rounded-full text-[#FFFFFF] p-4 bg-[#41788E] drop-shadow-md w-40 mt-5 hover:bg-[#F7A741] focus:ring-2 focus:ring-[#380445]'>Search now</button>
     </div>
-    <section className='flex justify-around items-center m-5 mt-10'>
+    </section>
+<section className='text-3xl font-thin text-[#380445] p-12 text-center'>
+  <p>Browse through some of the facilities </p>
+  <p>and services available...</p>
+</section>
+    <article className="flex flex-col  bg-cover bg-center min-h-screen" style={{backgroundImage: `url(${bgImg})`}}> 
+
+    <section className='flex justify-around items-center  m-5 mt-10'>
       <div>
-    <p className='font-medium text-[#FFFFFF]'>Services Near You</p>
+    <p className='text-xl text-[#FFFFFF]'>Services Near You</p>
     </div>
-    <div className='flex font-light text-xs text-[#41788E]'>
-      <select name="Sort" id="Sort" className='rounded-full'>Sort By
+    <div className='flex font-light text-sm text-[#41788E]'>
+      <select name="Sort" id="Sort" className='rounded-full bg-inherit'>Sort By
       <option value="">Sort by</option>
       <option value="">Services</option>
       <option value="">Location</option>
@@ -34,10 +49,10 @@ const NearYou = () => {
     </div>
     </section>
     <section className='flex justify-center'>
-      <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2'>
+      <div className=' p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border backdrop-blur-xl'>
       <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-        <p className='text-[#41788E]'>Masbith Care</p>
-          <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
+        <p className='text-[#F7A741]'>Masbith Care</p>
+          <div className='flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4'>
           <div className='flex gap-5'>
         <img src={BedIcon} alt="" />
         <p>Disability Care, Housing Assistance, Shelter, Healthcare... </p>
@@ -59,10 +74,10 @@ const NearYou = () => {
     </section>
     <br />
     <section className='flex justify-center'>
-    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2 '>
+    <div className='p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2 '>
     <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-        <p className='text-[#41788E]'>Lewan Training Institute</p>
-          <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
+        <p className='text-[#F7A741]'>Lewan Training Institute</p>
+          <div className='flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4'>
           <div className='flex gap-5'>
         <img src={ScholarHat} alt="" />
         <p>Foster Care Assist, Education, Counselling, Healthcare...</p>
@@ -84,10 +99,10 @@ const NearYou = () => {
     </section>
 <br />
     <section className='flex justify-center'>
-    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md  overflow-hidden border-2'>
+    <div className='p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md  overflow-hidden border backdrop-blur-xl'>
     <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-        <p className='text-[#41788E]'>Alliant Union Services</p>
-          <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
+        <p className='text-[#F7A741]'>Alliant Union Services</p>
+          <div className='flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4'>
           <div className='flex gap-5'>
           <img src={BedIcon} alt="" />
         <p>Permanent Housing Assist, Transportation, Counselling...</p>
@@ -110,10 +125,10 @@ const NearYou = () => {
     <br />
     
     <section className='flex justify-center'>
-    <div className='bg-[#FFFFFF] p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border-2'>
+    <div className=' p-5 rounded-2xl mx-10 w-3/4 drop-shadow-md overflow-hidden border backdrop-blur-xl'>
     <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
-        <p className='text-[#41788E]'>Arm The Child Foundation</p>
-          <div className='flex flex-col gap-4 text-[#380445] font-light text-sm mt-4'>
+        <p className='text-[#F7A741]'>Arm The Child Foundation</p>
+          <div className='flex flex-col gap-4 text-[#FFFFFF] font-light text-sm mt-4'>
           <div className='flex gap-5'>
           <img src={BedIcon} alt="" />
         <p>Permanent Housing Assist, Transportation, Counselling...</p>
@@ -133,6 +148,7 @@ const NearYou = () => {
         </div>
       </div>
     </section>
+    </article>
     </div>
   );
 };
