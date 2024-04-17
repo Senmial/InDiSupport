@@ -10,7 +10,7 @@ import bgImg from "../assets/images/bgHelpingHand.jpg";
 const Signup = () => {
     return (
         <div className="flex justify-end items-center bg-cover bg-center min-h-screen" style={{backgroundImage: `url(${bgImg})`}}> 
-          <div className="relative border w-2/5 border-[#380445]-500/75    rounded-xl overflow-hidden drop-shadow-md mr-5 backdrop-blur-lg">
+          <div className="relative border w-2/5 border-[#380445]-500/75    rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
           <img src={luckycharm} className=" absolute top-0 right-0" alt="" /> 
             <div className="flex flex-col justify-center items-center">
             <img src={login1} className="w-2/5 pt-4" alt="" />
@@ -19,7 +19,7 @@ const Signup = () => {
             </p>
     
             <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
-              <Link className="font-medium drop-shadow-lg text-[#41788E] ">Sign Up</Link>
+              <Link className="font-medium  text-[#41788E] ">Sign Up</Link>
               <Link className="text-[#F5F5F5] font-thin">Login</Link>
             </div>
             <div className="w-8/12 pt-4">
@@ -111,9 +111,7 @@ const Signup = () => {
                 <p className='text-[0.5rem] text-[#380445]  font-light'>By signing up, you agree to our <span className='underline text-[#F7A741]'>Terms & Conditions</span></p>
               </div>
             </div>
-            <div className="border rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7">
-                <p className="text-[1rem] text-[#FFFFFF] py-3">Submit</p>
-            </div>
+                <button className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]">Submit</button>
             <div>
                 <p className="text-[0.7rem] text-[#380445]">or login with</p>
             </div>

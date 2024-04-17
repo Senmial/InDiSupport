@@ -3,8 +3,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/login/Login";
 import Signup from "./pages/Signup";
-import NearYou from "./pages/NearYou";
+import ShelterHome from "./pages/ShelterHome";
 import RequesterHome from "./pages/requesterHomepage/RequesterHome";
+import HealthCare from "./pages/HealthCare";
+import FoodBank from "./pages/FoodBank";
+import MasbithCare from "./pages/MasbithCare";
 
 function App() {
   return (
@@ -15,8 +18,11 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} /> 
-          <Route path="/nearyou" element={<NearYou/>} /> 
+          <Route path="/shelterhome" element={<ShelterHome/>} /> 
           <Route path="/requesterhome" element={<RequesterHome/>} /> 
+          <Route path="/healthcare" element={<HealthCare />} /> 
+          <Route path="/foodbank" element={<FoodBank />} /> 
+          <Route path="/masbithcare" element={<MasbithCare />} /> 
         </Routes>
       </BrowserRouter>
     </>

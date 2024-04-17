@@ -1,24 +1,34 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import volunteer4 from "../assets/images/volunteer4.svg"
+import logo from "../assets/images/logo.svg"
+import SearchIcon from "../assets/images/searchIcon.svg"
 
 const Navbar = () => {
   return (
     <div className='backdrop-blur-xs p-1 h-24 px-14 py-5'>
       <nav className='flex items-center justify-between px-5]'>
         <div className='flex items-center' >
-        <img src={volunteer4} className="w-1/2 " alt="logo" />
+        <img src={logo} className="w-1/2 " alt="logo" />
         </div>
       
-        <div className=' flex gap-5'>
-        <Link className=" text-[#380445] text-xs">Accessibility</Link>
-        <Link className=" text-[#380445] text-xs">About Us</Link>
-        <Link className=" text-[#380445] text-xs">Contact Us</Link>
+        <div className=' flex gap-5 font-thin text-md text-[#380445] '>
+          <img src={SearchIcon} alt="" />
+        <Link className="">Accessibility</Link>
      
-      <div className='flex font-light text-xs text-[#41788E]  '>
+      <div className=' '>
+      <select name="" id="" className='bg-inherit'>
+      <option value="">Donate</option>
+      <option value="">Volunteer</option>
+      <option value="">About Us</option>
+      <option value="">Contact Us</option>
+      <option value="">Blog</option>
+      </select>
+  </div>
+
+      <div className=' '>
       <select name="" id="" className='bg-inherit'>
       <option value="">Menu</option>
-      <option value="">Account Settings</option>
+      <option value="">Settings</option>
       <option value="">Profile</option>
       <option value="">Logout</option>
       </select>

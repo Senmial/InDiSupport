@@ -12,7 +12,7 @@ import bgImg from "../../assets/images/bgHelpingHand.jpg";
 const Login = () => {
   return (
     <div className="flex justify-end items-center bg-cover bg-center min-h-screen" style={{backgroundImage: `url(${bgImg})`}}> 
-          <div className="relative border w-2/5 rounded-xl overflow-hidden drop-shadow-md mr-5 backdrop-blur-lg">
+          <div className="relative border w-2/5 rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
       <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <div className="flex flex-col justify-center items-center">
         <img src={login1} className="w-2/5 pt-4" alt="" />
@@ -21,7 +21,7 @@ const Login = () => {
         </p>
 
         <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
-                        <Link className="font-medium drop-shadow-lg text-[#41788E] ">Login</Link>
+                        <Link className="font-medium  text-[#41788E] ">Login</Link>
               <Link className="text-[#F5F5F5] font-thin ">Sign Up</Link>
         </div>
         <div className="w-8/12 pt-4">
@@ -68,7 +68,7 @@ const Login = () => {
             />
           </div>
         </div>
-        <div className="border rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7">
+        <div className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7">
             <p className="text-[1rem] text-[#FFFFFF] py-3">Submit</p>
         </div>
         <div>
