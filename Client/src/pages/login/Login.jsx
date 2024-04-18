@@ -6,10 +6,15 @@ import facebooklogo from "../../assets/images/facebooklogo.svg";
 import googlelogo from "../../assets/images/googlelogo.svg";
 import bottomcircle from "../../assets/images/bottomcircle.svg";
 import bgImg from "../../assets/images/bgHelpingHand.jpg";
+import { useNavigate } from "react-router-dom";
 
 
 
 const Login = () => {
+  const navigate = useNavigate();
+  const goTo = (path) => {
+    navigate(path)
+  }
   return (
     <div className="flex justify-end items-center bg-cover bg-center min-h-screen" style={{backgroundImage: `url(${bgImg})`}}> 
           <div className="relative border w-2/5 rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
@@ -21,8 +26,8 @@ const Login = () => {
         </p>
 
         <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
-                        <Link className="font-medium  text-[#41788E] ">Login</Link>
-              <Link className="text-[#F5F5F5] font-thin ">Sign Up</Link>
+                        <Link className="font-medium  text-[#41788E] " >Login</Link>
+              <Link className="text-[#F5F5F5] font-thin " onClick={() => goTo('/signup')}>Sign Up</Link>
         </div>
         <div className="w-8/12 pt-4">
           <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
@@ -68,9 +73,8 @@ const Login = () => {
             />
           </div>
         </div>
-        <div className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7">
-            <p className="text-[1rem] text-[#FFFFFF] py-3">Submit</p>
-        </div>
+      
+        <button className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]" onClick={() => goTo('/requesterhome')}>Submit</button>
         <div>
             <p className="text-[0.7rem] text-[#380445]">or login with</p>
         </div>

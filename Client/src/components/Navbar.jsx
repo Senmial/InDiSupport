@@ -2,13 +2,20 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg"
 import SearchIcon from "../assets/images/searchIcon.svg"
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const goTo = (path) => {
+    navigate(path)
+  }
+
   return (
-    <div className='backdrop-blur-xs p-1 h-24 px-14 py-5'>
-      <nav className='flex items-center justify-between px-5]'>
+    <div className='backdrop-blur-xs p-1 h-24 px-14 py-5 '>
+      <nav className='flex items-center justify-between px-5'>
         <div className='flex items-center' >
-        <img src={logo} className="w-1/2 " alt="logo" />
+        <img src={logo} className="w-1/2 " alt="logo" onClick={() => goTo('/requesterhome')}/>
         </div>
       
         <div className=' flex gap-5 font-thin text-md text-[#380445] '>
@@ -30,7 +37,7 @@ const Navbar = () => {
       <option value="">Menu</option>
       <option value="">Settings</option>
       <option value="">Profile</option>
-      <option value="">Logout</option>
+      <option value="" onClick={() => goTo('/indisupport')}>Logout</option>
       </select>
     </div>
     </div>

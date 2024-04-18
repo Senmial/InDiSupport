@@ -6,8 +6,14 @@ import facebooklogo from "../assets/images/facebooklogo.svg";
 import googlelogo from "../assets/images/googlelogo.svg";
 import bottomcircle from "../assets/images/bottomcircle.svg";
 import bgImg from "../assets/images/bgHelpingHand.jpg";
+import { useNavigate } from "react-router-dom";
+
 
 const Signup = () => {
+  const navigate = useNavigate();
+  const goTo = (path) => {
+    navigate(path)
+  }
     return (
         <div className="flex justify-end items-center bg-cover bg-center min-h-screen" style={{backgroundImage: `url(${bgImg})`}}> 
           <div className="relative border w-2/5 border-[#380445]-500/75    rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
@@ -20,7 +26,7 @@ const Signup = () => {
     
             <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
               <Link className="font-medium  text-[#41788E] ">Sign Up</Link>
-              <Link className="text-[#F5F5F5] font-thin">Login</Link>
+              <Link className="text-[#F5F5F5] font-thin" onClick={() => goTo('/login')}>Login</Link>
             </div>
             <div className="w-8/12 pt-4">
               <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
@@ -111,7 +117,7 @@ const Signup = () => {
                 <p className='text-[0.5rem] text-[#380445]  font-light'>By signing up, you agree to our <span className='underline text-[#F7A741]'>Terms & Conditions</span></p>
               </div>
             </div>
-                <button className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]">Submit</button>
+                <button className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]" onClick={() => goTo('/requesterhome')}>Submit</button>
             <div>
                 <p className="text-[0.7rem] text-[#380445]">or login with</p>
             </div>

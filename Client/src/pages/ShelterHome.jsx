@@ -10,8 +10,15 @@ import lewanImg from "../assets/images/lewanImg.jpg";
 import alliantImg from "../assets/images/alliantImg.jpg";
 import armTCImg from "../assets/images/armTCImg.jpg";
 import infoIcon from "../assets/images/infoIcon.svg";
+import { useNavigate } from "react-router-dom";
+
+
 
 const ShelterHome = () => {
+  const navigate = useNavigate();
+  const goTo = (path) => {
+    navigate(path)
+  }
   return (
     <div className="bg-[#FFfFff] ">
       <Navbar />
@@ -68,7 +75,7 @@ const ShelterHome = () => {
       <br />
       <article className="">
         <section className="flex flex-nowrap p-10 gap-20">
-          <div className="  rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
+          <div className="  rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl" onClick={() => goTo('/masbithcare')}>
             <img src={masbithImg} className="" alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Masbith Care</p>
@@ -132,7 +139,7 @@ const ShelterHome = () => {
         </section>
         <br />
         <section className="flex flex-nowrap p-10 gap-20">
-          <div className="rounded-2xl  w-3/5 overflow-hidden border backdrop-blur-xl">
+          <div className="rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
             <img src={alliantImg} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Alliant Union Services</p>

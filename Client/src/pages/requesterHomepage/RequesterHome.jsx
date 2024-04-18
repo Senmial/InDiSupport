@@ -32,7 +32,7 @@ const RequesterHome = () => {
           className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
           onClick={() => goTo('/shelterhome')}
         >
-          <div>
+          <div className="flex text-justify">
             <img src={shelterImg} className="p-5" alt="" />
             <div className=" flex-col px-5">
               <img
@@ -53,7 +53,11 @@ const RequesterHome = () => {
         </button>
 
         <br />
-        <div className="backdrop-blur-xl p-5 rounded-2xl   w-2/5 shadow-md  overflow-hidden border flex mr-10">
+        <button
+          className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
+          onClick={() => goTo('/foodbank')}
+        >
+        <div className="flex text-justify">
           <img src={FoodBankImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
             <img
@@ -71,8 +75,13 @@ const RequesterHome = () => {
             </div>
           </div>
         </div>
+        </button>
         <br />
-        <div className="backdrop-blur-xl p-5 rounded-2xl   w-2/5 shadow-md  overflow-hidden border flex mr-10 ">
+        <button
+          className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
+          onClick={() => goTo('/healthcare')}
+        >
+        <div className="flex text-justify">
           <img src={HealthServicesImg} className="p-5" alt="" />
           <div className=" flex-col px-5">
             <img
@@ -89,6 +98,7 @@ const RequesterHome = () => {
             </div>
           </div>
         </div>
+        </button>
       </section>
     </div>
   );
