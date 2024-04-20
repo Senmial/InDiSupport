@@ -3,13 +3,13 @@ import mongoose, { connect } from "mongoose";
 
 const  connectdb = async () => {
 try {
-  await mongoose.connect(process.env.MONGO_URI) // calls for mongoose to coonect to save data in  mongodb_uri in .env file
+  await mongoose.connect(process.env.MONGO_URI) // calls for mongoose to connect to save data in  mongodb_uri in .env file
   console.log('Connected to MongoDB');
 } catch (err) {
   console.log(err);
 };
 };
-export default connectdb;
+export default connectdb; // this is then imported into index.js since that's what runs the entire server side
 
 
 

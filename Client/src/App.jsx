@@ -8,13 +8,12 @@ import RequesterHome from "./pages/requesterHomepage/RequesterHome";
 import HealthCare from "./pages/HealthCare";
 import FoodBank from "./pages/FoodBank";
 import MasbithCare from "./pages/MasbithCare";
-
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/indisupport" element={<LandingPage/>} />
+          <Route path="/" element={<LandingPage/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} /> 

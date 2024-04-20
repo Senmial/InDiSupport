@@ -1,3 +1,5 @@
+// this defines the structure of what collection(fields, data types). It guides what information should be collected - schema.
+
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt'; //used for password encryption - password hashing
 
@@ -11,6 +13,10 @@ const userSchema = mongoose.Schema({
         required: true
     },
     email: {
+        type: String,
+        required: true
+    },
+    phoneNumber: {
         type: String,
         required: true
     },
