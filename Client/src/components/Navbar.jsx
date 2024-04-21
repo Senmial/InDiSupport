@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#FFFFFF] p-1 h-24 px-14 py-5 w-full fixed top-0">
-      <nav className="flex items-center justify-between px-5">
+      <nav className="flex items-center justify-between ">
         <div className="flex items-center">
           <img
             src={logo}
@@ -64,10 +64,8 @@ const Navbar = () => {
           </div>
         </form>
 
-        <div className=" flex gap-5 font-thin text-md text-[#380445] ">
-          <Link className="">Accessibility</Link>
-
-          <div className=" ">
+        <div className=" flex justify-center items-center gap-5 font-thin text-md text-[#380445] ">
+          {/* <div className=" ">
             <select name="" id="" className="bg-inherit">
               <option value="">Donate</option>
               <option value="">Volunteer</option>
@@ -75,13 +73,51 @@ const Navbar = () => {
               <option value="">Contact Us</option>
               <option value="">Blog</option>
             </select>
-          </div>
+          </div> */}
+
+          <button
+            class="text-white bg-[#F7A741] hover:bg-[#380445]  font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            type="button"
+          >
+            Donate{" "}
+          </button>
+          <button
+            class="text-white bg-[#F7A741] hover:bg-[#380445] font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            type="button"
+          >
+            Volunteer{" "}
+          </button>
+
+{/* 
+          <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown hover <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg>
+</button>
+<div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+</div> */}
+
+
 
           <div className=" ">
             <select name="" id="" className="bg-inherit">
               <option value="">Menu</option>
               <option value="">Settings</option>
               <option value="">Profile</option>
+              <option value="">Accessibility</option>
               <option value="" onClick={() => goTo("/indisupport")}>
                 Logout
               </option>

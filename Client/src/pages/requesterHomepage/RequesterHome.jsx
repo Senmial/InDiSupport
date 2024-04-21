@@ -23,11 +23,11 @@ const RequesterHome = () => {
     >
       <Navbar />
       <br />
-      <p className=" text-[#380445] font-thin text-2xl mr-48 mt-16 flex justify-end">
+      <p className=" text-[#380445] font-thin text-2xl  mt-32 flex justify-center">
         Hi there friend, how may we help you today?
       </p>
       <br />
-      <section className="flex flex-col justify-center items-end gap-3">
+      <section className="flex flex-col justify-center items-center gap-3">
         <button
           className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
           onClick={() => goTo('/shelterhome')}

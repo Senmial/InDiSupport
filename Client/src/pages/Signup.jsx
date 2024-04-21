@@ -16,9 +16,9 @@ const Signup = () => {
   return (
     <div
       className="flex justify-end items-center bg-cover bg-center min-h-screen"
-      style={{ backgroundImage: `url(${bgImg})` }}
+      style={{ backgroundImage: `url(${bgImg })`} }
     >
-      <div className="relative border w-2/5 border-[#380445]-500/75  rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
+      <div className="relative border w-2/5  rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
         <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <div className="flex flex-col justify-center items-center">
           <img src={login1} className="w-2/5 pt-4" alt="" />
