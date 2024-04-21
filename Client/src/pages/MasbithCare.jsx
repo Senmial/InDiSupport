@@ -23,10 +23,10 @@ const MasbithCare = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleModal = () => {
+const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
-
+ 
 
   return (
     <div className="">
@@ -34,6 +34,8 @@ const MasbithCare = () => {
       <div>
       <Navbar />
       </div>
+
+      {/* Service Provider Info */}
       <section className="flex p-20 gap-10 ">
         <div className="h-full w-3/4 mt-20">
             
@@ -73,6 +75,7 @@ const MasbithCare = () => {
         </article>
       </section>
 
+{/* Service Provider Details */}
       <section className="flex flex-nowrap p-5 w-full mt-0 ">
         <div className="  overflow-hidden border backdrop-blur-xl  ">
           <div className="p-5">
@@ -104,6 +107,10 @@ const MasbithCare = () => {
         </div>
       </section>
 
+
+{/* Services Available Modal */}
+      <section>
+
       <div className="flex justify-center m-10">
         
         
@@ -126,7 +133,7 @@ const MasbithCare = () => {
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 {/* <!-- Modal header --> */}
                 <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    <h3 class="text-lg font-semibold text-[#380445] dark:text-white">
                         Services Available
                     </h3>
                     <button type="button" onClick={()=>setIsModalOpen(false)} class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="select-modal">
@@ -141,57 +148,119 @@ const MasbithCare = () => {
                     <p class="text-gray-500 dark:text-gray-400 mb-4">Select Services Available:</p>
                     <ul class="space-y-4 mb-4">
                         <li>
-                            <input type="radio" id="job-1" name="job" value="job-1" class="hidden peer" required />
-                            <label for="job-1" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
+                        <input type="radio" id="service-1" name="service" value="service-1" class="hidden peer"/>
+                            <label for="service-1" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
                                 <div class="block">
                                     <div class="w-full text-lg font-semibold">Shareable Studios</div>
                                     <div class="w-full text-gray-500 dark:text-gray-400"></div>
                                 </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
                             </label>
                         </li>
                         <li>
-                            <input type="radio" id="job-2" name="job" value="job-2" class="hidden peer"/>
-                            <label for="job-2" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">
+                        <input type="radio" id="service-2" name="service" value="service-2" class="hidden peer"/>
+                            <label for="service-2" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
                                 <div class="block">
                                     <div class="w-full text-lg font-semibold">Bed Space</div>
                                     <div class="w-full text-gray-500 dark:text-gray-400"></div>
                                 </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
                             </label>
                         </li>
                         <li>
-                            <input type="radio" id="job-3" name="job" value="job-3" class="hidden peer"/>
-                            <label for="job-3" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">
+                        <input type="radio" id="service-3" name="service" value="service-3" class="hidden peer"/>
+                            <label for="service-3" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
                                 <div class="block">
                                     <div class="w-full text-lg font-semibold">Medical Services</div>
                                     <div class="w-full text-gray-500 dark:text-gray-400"></div>
                                 </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
                             </label>
                         </li>
                         <li>
-                            <input type="radio" id="job-3" name="job" value="job-3" class="hidden peer"/>
-                            <label for="job-3" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">
+                            <input type="radio" id="service-4" name="service" value="service-4" class="hidden peer"/>
+                            <label for="service-4" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
                                 <div class="block">
                                     <div class="w-full text-lg font-semibold">Other Resources</div>
                                     <div class="w-full text-gray-500 dark:text-gray-400"></div>
                                 </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
                             </label>
                         </li>
                     </ul>
-                    {/* <button class="text-white inline-flex w-full justify-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Next step
-                    </button> */}
+                    
                 </div>
             </div>
         </div>
     </div>
       )}
+</section>
 
+{/* Capacity Available */}
+{/* <!-- Modal toggle --> */}
+{/* Modal toggle */}
+<button 
+onClick={toggleModal}
+  className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
+  type="button">
+  Toggle modal
+</button>
 
+{/* Main modal */}
+{isModalOpen && (
+<div 
+  className="overflow-y-auto overflow-x-hidden fixed  z-50 justify-center items-center w-full ">
+  
+  <div className="relative p-4 w-full max-w-md max-h-full">
+    {/* Modal content */}
+    <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <button 
+        type="button" 
+        className="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" 
+        >
+        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+        <span className="sr-only">Close modal</span>
+      </button>
 
+      <div className="p-4 md:p-5">
+        <svg className="w-10 h-10 text-gray-400 dark:text-gray-500 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+          <path d="M8 5.625c4.418 0 8-1.063 8-2.375S12.418.875 8 .875 0 1.938 0 3.25s3.582 2.375 8 2.375Zm0 13.5c4.963 0 8-1.538 8-2.375v-4.019c-.052.029-.112.054-.165.082a8.08 8.08 0 0 1-.745.353c-.193.081-.394.158-.6.231l-.189.067c-2.04.628-4.165.936-6.3.911a20.601 20.601 0 0 1-6.3-.911l-.189-.067a10.719 10.719 0 0 1-.852-.34 8.08 8.08 0 0 1-.493-.244c-.053-.028-.113-.053-.165-.082v4.019C0 17.587 3.037 19.125 8 19.125Zm7.09-12.709c-.193.081-.394.158-.6.231l-.189.067a20.6 20.6 0 0 1-6.3.911 20.6 20.6 0 0 1-6.3-.911l-.189-.067a10.719 10.719 0 0 1-.852-.34 8.08 8.08 0 0 1-.493-.244C.112 6.035.052 6.01 0 5.981V10c0 .837 3.037 2.375 8 2.375s8-1.538 8-2.375V5.981c-.052.029-.112.054-.165.082a8.08 8.08 0 0 1-.745.353Z"/>
+        </svg>
+
+        <h3 className="mb-1 text-xl font-bold text-gray-900 dark:text-white">Approaching Full Capacity</h3>
+        <p className="text-gray-500 dark:text-gray-400 mb-6">Choosing the right server storage solution is essential for maintaining data integrity.</p>
+
+        <div className="flex justify-between mb-1 text-gray-500 dark:text-gray-400">
+          <span className="text-base font-normal">My storage</span>
+          <span className="text-sm font-semibold text-gray-900 dark:text-white">376,3 of 500 GB used</span>
+        </div>
+
+        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">
+          <div className="bg-orange-500 h-2.5 rounded-full" style={{ width: '85%' }}></div>
+        </div>
+
+        {/* Modal footer */}
+        <div className="flex items-center mt-6 space-x-4 rtl:space-x-reverse">
+          <button 
+            type="button" 
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Upgrade to PRO
+          </button>
+          
+          <button 
+            type="button" 
+            className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+)}
 
 
 
@@ -392,13 +461,14 @@ const MasbithCare = () => {
               type="time"
               className="max-w-sm px-3 py-2 bg-gray-50  border border-gray-300 rounded-md focus:outline-none focus:ring-[#380445] focus:border-[#380445]"
             />
-            <button className="bg-[#F7A741] hover:bg-[#380445] text-white font-thin text-sm py-2 px-4 rounded-full">
+            <button className="text-[#F7A741] hover:bg-[#380445]  font-thin text-sm py-2 px-4 ">
               Select Time
             </button>
           </div>
         </div>
       </section>
 
+      {/* View Gallery and Events */}
       <section className="p-5">
         <button className=" text-[#F7A741] text-xl  mt-5 mb-5 px-5 hover:text-[#380445]">
           View Gallery and Events

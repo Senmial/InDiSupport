@@ -49,7 +49,7 @@ const Signup = () => {
                 />
               </svg>
               <input
-                type="text"
+                required type="text"
                 placeholder="Full Name"
                 className=" outline-none w-full bg-inherit font-thin text-[0.8rem] text-[#380445] "
               />

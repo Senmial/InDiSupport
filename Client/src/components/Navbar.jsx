@@ -23,7 +23,8 @@ const Navbar = () => {
           />
         </div>
 
-        <form class="w-1/4">
+<div className="">
+        <form className="w-full flex justify-center items-center gap-3 ">
           <label
             for="default-search"
             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -55,15 +56,15 @@ const Navbar = () => {
               placeholder="Search services, locations..."
               required
             />
-            <button
+          </div>
+          <button
               type="submit"
-              class="text-white absolute font-light end-2.5 bottom-2.5 bg-[#380445] hover:bg-[#F7A741] focus:ring-4 focus:outline-none focus:ring-[#41788E] rounded-lg text-xs px-3 py-2 dark:bg-[#41788E] dark:hover:[#41788E] dark:focus:ring-[#41788E]"
+              class="text-white h-1/2 font-light  bg-[#41788E] hover:bg-[#F7A741] focus:ring-4 focus:outline-none focus:ring-[#41788E] rounded-lg text-xs px-3 py-2 dark:bg-[#41788E] dark:hover:[#41788E] dark:focus:ring-[#41788E]"
             >
               Search
             </button>
-          </div>
         </form>
-
+        </div>
         <div className=" flex justify-center items-center gap-5 font-thin text-md text-[#380445] ">
           {/* <div className=" ">
             <select name="" id="" className="bg-inherit">
@@ -76,14 +77,13 @@ const Navbar = () => {
           </div> */}
 
           <button
-            class="text-white bg-[#F7A741] hover:bg-[#380445]  font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white bg-[#380445] hover:bg-[#F7A741]  font-medium rounded-md text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             type="button"
           >
             Donate{" "}
           </button>
           <button
-            class="text-white bg-[#F7A741] hover:bg-[#380445] font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            type="button"
+            class=" text-[#F7A741] hover:text-[#380445] font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center"
           >
             Volunteer{" "}
           </button>
