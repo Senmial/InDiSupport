@@ -23,7 +23,7 @@ const ShelterHome = () => {
     <div className="bg-[#FFfFff] ">
       <Navbar />
       <section
-        className="flex justify-center items-center mt-10 p-10 bg-[#380445]
+        className="flex justify-center items-center mt-32 p-10 bg-[#380445]
 ]"
       >
         <img src={welcomeShelter} className=" w-2/4 rounded-md" alt="" />

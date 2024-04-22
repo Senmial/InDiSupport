@@ -19,17 +19,16 @@ const RequesterHome = () => {
   return (
     <div
       className="bg-cover bg-center min-h-screen"
-      style={{ backgroundImage: `url(${bgImg})` }}
     >
       <Navbar />
       <br />
-      <p className=" text-[#380445] font-thin text-2xl  mt-32 flex justify-center">
+      <p className=" text-[#380445] font-thin text-2xl  mt-20 flex justify-center">
         Hi there friend, how may we help you today?
       </p>
       <br />
       <section className="flex flex-col justify-center items-center gap-3">
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
+          className="backdrop-blur-xl p-5 rounded-2xl  w-3/4 shadow-md overflow-hidden border flex "
           onClick={() => goTo('/shelterhome')}
         >
           <div className="flex text-justify">
@@ -54,7 +53,7 @@ const RequesterHome = () => {
 
         <br />
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
+          className="backdrop-blur-xl p-5 rounded-2xl  w-3/4 shadow-md overflow-hidden border flex "
           onClick={() => goTo('/foodbank')}
         >
         <div className="flex text-justify">
@@ -78,7 +77,7 @@ const RequesterHome = () => {
         </button>
         <br />
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-2/5 shadow-md overflow-hidden border flex mr-10"
+          className="backdrop-blur-xl p-5 rounded-2xl  w-3/4 shadow-md overflow-hidden border flex "
           onClick={() => goTo('/healthcare')}
         >
         <div className="flex text-justify">

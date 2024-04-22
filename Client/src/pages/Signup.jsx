@@ -16,17 +16,17 @@ const Signup = () => {
   return (
     <div
       className="flex justify-end items-center bg-cover bg-center min-h-screen"
-      style={{ backgroundImage: `url(${bgImg })`} }
+      style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="relative border w-2/5  rounded-xl overflow-hidden  mr-5 backdrop-blur-lg">
         <img src={luckycharm} className=" absolute top-0 right-0" alt="" />
         <div className="flex flex-col justify-center items-center">
-          <img src={login1} className="w-2/5 pt-4" alt="" />
-          <p className="font-small text-[#380445] text-[1rem] pt-3 ">
+          <img src={login1} className="w-2/5 pt-2" alt="" />
+          <p className="font-small text-[#380445] text-[1rem]  ">
             Welcome to InDiSupport
           </p>
 
-          <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
+          <div className="w-3/5 flex justify-between p-4 uppercase font-medium">
             <Link className="font-medium  text-[#41788E] ">Sign Up</Link>
             <Link
               className="text-[#F5F5F5] font-thin"
@@ -35,7 +35,7 @@ const Signup = () => {
               Login
             </Link>
           </div>
-          <div className="w-8/12 pt-4">
+          <div className="w-8/12 pt-2">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
               <svg
                 className="w-6"
@@ -49,13 +49,35 @@ const Signup = () => {
                 />
               </svg>
               <input
-                required type="text"
-                placeholder="Full Name"
+                type="text"
+                placeholder="First Name"
+                className=" outline-none w-full bg-inherit font-thin text-[0.8rem] text-[#380445] "
+                required
+              />
+            </div>
+          </div>
+          <div className="w-8/12 pt-2">
+            <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
+              <svg
+                className="w-6"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.99998 9.97919C9.08331 9.97919 8.33331 9.68752 7.74998 9.10419C7.16665 8.52085 6.87498 7.77085 6.87498 6.85419C6.87498 5.93752 7.16665 5.18752 7.74998 4.60419C8.33331 4.02085 9.08331 3.72919 9.99998 3.72919C10.9166 3.72919 11.6666 4.02085 12.25 4.60419C12.8333 5.18752 13.125 5.93752 13.125 6.85419C13.125 7.77085 12.8333 8.52085 12.25 9.10419C11.6666 9.68752 10.9166 9.97919 9.99998 9.97919ZM3.33331 16.6667V14.7084C3.33331 14.1806 3.46526 13.7292 3.72915 13.3542C3.99304 12.9792 4.33331 12.6945 4.74998 12.5C5.68054 12.0834 6.5729 11.7709 7.42706 11.5625C8.28123 11.3542 9.13887 11.25 9.99998 11.25C10.8611 11.25 11.7153 11.3577 12.5625 11.5729C13.4097 11.7882 14.2986 12.0972 15.2291 12.5C15.6597 12.6945 16.0069 12.9792 16.2708 13.3542C16.5347 13.7292 16.6666 14.1806 16.6666 14.7084V16.6667H3.33331ZM4.58331 15.4167H15.4166V14.7084C15.4166 14.4861 15.3507 14.2743 15.2187 14.0729C15.0868 13.8715 14.9236 13.7222 14.7291 13.625C13.8403 13.1945 13.0278 12.8993 12.2916 12.7396C11.5555 12.5799 10.7916 12.5 9.99998 12.5C9.20831 12.5 8.43748 12.5799 7.68748 12.7396C6.93748 12.8993 6.12498 13.1945 5.24998 13.625C5.05554 13.7222 4.89581 13.8715 4.77081 14.0729C4.64581 14.2743 4.58331 14.4861 4.58331 14.7084V15.4167ZM9.99998 8.72919C10.5416 8.72919 10.9896 8.5521 11.3437 8.19794C11.6979 7.84377 11.875 7.39585 11.875 6.85419C11.875 6.31252 11.6979 5.8646 11.3437 5.51044C10.9896 5.15627 10.5416 4.97919 9.99998 4.97919C9.45831 4.97919 9.0104 5.15627 8.65623 5.51044C8.30206 5.8646 8.12498 6.31252 8.12498 6.85419C8.12498 7.39585 8.30206 7.84377 8.65623 8.19794C9.0104 8.5521 9.45831 8.72919 9.99998 8.72919Z"
+                  fill="#FFFFFF"
+                />
+              </svg>
+              <input
+                required
+                type="text"
+                placeholder="Last Name"
                 className=" outline-none w-full bg-inherit font-thin text-[0.8rem] text-[#380445] "
               />
             </div>
           </div>
-          <div className="w-8/12 pt-4">
+          <div className="w-8/12 pt-2">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
               <svg
                 className="w-6"
@@ -75,7 +97,7 @@ const Signup = () => {
               />
             </div>
           </div>
-          <div className="w-8/12 pt-4">
+          <div className="w-8/12 pt-2">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
               <svg
                 className="w-6"
@@ -97,7 +119,7 @@ const Signup = () => {
               />
             </div>
           </div>
-          <div className="w-8/12 pt-4">
+          <div className="w-8/12 pt-2">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
               <svg
                 className="w-6"
@@ -121,7 +143,7 @@ const Signup = () => {
               />
             </div>
           </div>
-          <div className="w-8/12 pt-4">
+          <div className="w-8/12 pt-2">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
               <svg
                 className="w-6"
@@ -155,7 +177,7 @@ const Signup = () => {
             </div>
           </div>
           <button
-            className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]"
+            className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-5 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]"
             onClick={() => goTo("/requesterhome")}
           >
             Submit
@@ -163,7 +185,7 @@ const Signup = () => {
           <div>
             <p className="text-[0.7rem] text-[#380445]">or login with</p>
           </div>
-          <div className="flex justify-center items-center py-4 gap-5">
+          <div className="flex justify-center items-center py-2 gap-5">
             <img src={facebooklogo} alt="" />
             <img src={googlelogo} alt="" />
           </div>

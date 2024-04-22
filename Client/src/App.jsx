@@ -8,7 +8,7 @@ import RequesterHome from "./pages/requesterHomepage/RequesterHome";
 import HealthCare from "./pages/HealthCare";
 import FoodBank from "./pages/FoodBank";
 import MasbithCare from "./pages/MasbithCare";
-import Test from "./pages/Test";
+import SharedStudiosModal from "./pages/SharedStudios";
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
           <Route path="/healthcare" element={<HealthCare />} /> 
           <Route path="/foodbank" element={<FoodBank />} /> 
           <Route path="/masbithcare" element={<MasbithCare />} /> 
-          <Route path="/test" element={<Test />} /> 
+          <Route path="/SharedStudios" element={<SharedStudiosModal />} /> 
         </Routes>
       </BrowserRouter>
     </>

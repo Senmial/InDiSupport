@@ -88,30 +88,30 @@ const Login = () => {
                   id="remember"
                   type="checkbox"
                   value=""
-                  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                  class="w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                   required
                 />
               </div>
               <label
                 for="remember"
-                class="ms-2 text-sm font-sm text-[#380445] dark:text-gray-300"
+                class="ms-2 text-xs font-sm text-[#380445] dark:text-gray-300"
               >
                 Remember me
               </label>
             </div>
             <a
               href="#"
-              class="ms-auto text-sm text-[#F7A741] hover:underline dark:text-blue-500"
+              class="ms-auto text-xs text-[#F7A741] hover:underline dark:text-blue-500"
             >
               Lost Password?
             </a>
           </div>
           
-          <div class="text-sm font-medium text-[#380445] dark:text-gray-300 ">
+          <div class="text-sm font-thin text-[#F7A741] dark:text-gray-300 ">
             Not registered?{" "}
             <a
               href="#"
-              class="text-[#F7A741] hover:underline dark:text-blue-500"
+              class="text-sm t text-[#380445] hover:text-[#F7A741] dark:text-blue-500"
             >
               Create account
             </a>
@@ -123,7 +123,7 @@ const Login = () => {
             className="rounded-full bg-[#F7A741] w-4/12 flex justify-center my-7 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]"
             onClick={() => goTo("/requesterhome")}
           >
-            Login to your account
+            Login
           </button>
           <div>
             <p className="text-[0.7rem] text-[#380445]">or login with</p>
