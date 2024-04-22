@@ -15,31 +15,30 @@ import twitterIcon from "../assets/images/twitterIcon.svg";
 import instagramIcon from "../assets/images/instagramIcon.svg";
 import youtubeIcon from "../assets/images/youtubeIcon.svg";
 import Location from "../assets/images/location.svg";
-import '../styles.css';
-
-
+import "../styles.css";
 
 const MasbithCare = () => {
+  const [isServicesModalOpen, setIsServicesModalOpen] = useState(false);
+  const [isCapacityModalOpen, setIsCapacityModalOpen] = useState(false);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
+  const toggleServicesModal = (isOpen = true) => {
+    setIsServicesModalOpen(isOpen);
   };
- 
+
+  const toggleCapacityModal = (isOpen = true) => {
+    setIsCapacityModalOpen(isOpen);
+  };
 
   return (
     <div className="">
-
       <div>
-      <Navbar />
+        <Navbar />
       </div>
 
       {/* Service Provider Info */}
       <section className="flex p-20 gap-10 ">
         <div className="h-full w-3/4 mt-20">
-            
-            <p className="text-[#380445] text-4xl  mb-5">Masbith Care</p>
+          <p className="text-[#380445] text-4xl  mb-5">Masbith Care</p>
           <img src={masbithImg} className="rounded-2xl" alt="" />
         </div>
         <article className="w-1/2 h-1/2 p-10 bg-[#380445] rounded-2xl mt-24 ">
@@ -75,7 +74,7 @@ const toggleModal = () => {
         </article>
       </section>
 
-{/* Service Provider Details */}
+      {/* Service Provider Details */}
       <section className="flex flex-nowrap p-5 w-full mt-0 ">
         <div className="  overflow-hidden border backdrop-blur-xl  ">
           <div className="p-5">
@@ -107,165 +106,275 @@ const toggleModal = () => {
         </div>
       </section>
 
-
-{/* Services Available Modal */}
+      {/* Services Available Modal */}
       <section>
-
-      <div className="flex justify-center m-10">
-        
-        
-        <button
-        onClick={toggleModal}
-        className="inline-flex items-center px-3 py-2 text-sm font-medium  rounded-md text-center text-white bg-[#380445] hover:bg-[#F7A741] focus:ring-2 focus:ring-[#41788E]"
-        type="button"
-        >
-        Select a Service
-      </button>
+        <div className="flex justify-center m-10">
+          <button
+            onClick={() => toggleServicesModal(true)}
+            className="inline-flex items-center px-3 py-2 text-sm font-medium  rounded-md text-center text-white bg-[#380445] hover:bg-[#F7A741] focus:ring-2 focus:ring-[#41788E]"
+            type="button"
+          >
+            Select a Service
+          </button>
         </div>
 
-
-      {isModalOpen && (
-         <div
-         className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden bg-gray-800 bg-opacity-50 flex justify-center items-center"
-       >
-        <div class="relative p-4 w-full max-w-md max-h-full">
-            {/* <!-- Modal content --> */}
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        {isServicesModalOpen && (
+          <div className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden bg-gray-800 bg-opacity-50 flex justify-center items-center">
+            <div class="relative p-4 w-full max-w-md max-h-full">
+              {/* <!-- Modal content --> */}
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 {/* <!-- Modal header --> */}
                 <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-lg font-semibold text-[#380445] dark:text-white">
-                        Services Available
-                    </h3>
-                    <button type="button" onClick={()=>setIsModalOpen(false)} class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="select-modal">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                        </svg>
-                        <span className="sr-only">Close modal</span>
-                    </button>
+                  <h3 class="text-lg font-semibold text-[#380445] dark:text-white">
+                    Services Available
+                  </h3>
+                  <button
+                    onClick={() => toggleServicesModal(false)}
+                    type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-toggle="select-modal"
+                  >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                      />
+                    </svg>
+                    <span className="sr-only">Close modal</span>
+                  </button>
                 </div>
                 {/* <!-- Modal body --> */}
                 <div class="p-4 md:p-5">
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">Select Services Available:</p>
-                    <ul class="space-y-4 mb-4">
-                        <li>
-                        <input type="radio" id="service-1" name="service" value="service-1" class="hidden peer"/>
-                            <label for="service-1" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
-                                <div class="block">
-                                    <div class="w-full text-lg font-semibold">Shareable Studios</div>
-                                    <div class="w-full text-gray-500 dark:text-gray-400"></div>
-                                </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
-                            </label>
-                        </li>
-                        <li>
-                        <input type="radio" id="service-2" name="service" value="service-2" class="hidden peer"/>
-                            <label for="service-2" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
-                                <div class="block">
-                                    <div class="w-full text-lg font-semibold">Bed Space</div>
-                                    <div class="w-full text-gray-500 dark:text-gray-400"></div>
-                                </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
-                            </label>
-                        </li>
-                        <li>
-                        <input type="radio" id="service-3" name="service" value="service-3" class="hidden peer"/>
-                            <label for="service-3" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
-                                <div class="block">
-                                    <div class="w-full text-lg font-semibold">Medical Services</div>
-                                    <div class="w-full text-gray-500 dark:text-gray-400"></div>
-                                </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" id="service-4" name="service" value="service-4" class="hidden peer"/>
-                            <label for="service-4" class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">                           
-                                <div class="block">
-                                    <div class="w-full text-lg font-semibold">Other Resources</div>
-                                    <div class="w-full text-gray-500 dark:text-gray-400"></div>
-                                </div>
-                                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
-                            </label>
-                        </li>
-                    </ul>
-                    
+                  <p class="text-gray-500 dark:text-gray-400 mb-4">
+                    Select Services Available:
+                  </p>
+                  <ul class="space-y-4 mb-4">
+                    <li>
+                      <input
+                        type="radio"
+                        id="service-1"
+                        name="service"
+                        value="service-1"
+                        class="hidden peer"
+                      />
+                      <label
+                        for="service-1"
+                        class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500"
+                      >
+                        <div class="block">
+                          <div class="w-full text-lg font-semibold">
+                            Shareable Studios
+                          </div>
+                          <div class="w-full text-gray-500 dark:text-gray-400"></div>
+                        </div>
+                        <svg
+                          class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="service-2"
+                        name="service"
+                        value="service-2"
+                        class="hidden peer"
+                      />
+                      <label
+                        for="service-2"
+                        class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500"
+                      >
+                        <div class="block">
+                          <div class="w-full text-lg font-semibold">
+                            Bed Space
+                          </div>
+                          <div class="w-full text-gray-500 dark:text-gray-400"></div>
+                        </div>
+                        <svg
+                          class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="service-3"
+                        name="service"
+                        value="service-3"
+                        class="hidden peer"
+                      />
+                      <label
+                        for="service-3"
+                        class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500"
+                      >
+                        <div class="block">
+                          <div class="w-full text-lg font-semibold">
+                            Medical Services
+                          </div>
+                          <div class="w-full text-gray-500 dark:text-gray-400"></div>
+                        </div>
+                        <svg
+                          class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="service-4"
+                        name="service"
+                        value="service-4"
+                        class="hidden peer"
+                      />
+                      <label
+                        for="service-4"
+                        class="inline-flex items-center justify-between w-full p-5 text-[#380445] bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-[#41788E] peer-checked:border-[#41788E] peer-checked:text-[#41788E] hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500"
+                      >
+                        <div class="block">
+                          <div class="w-full text-lg font-semibold">
+                            Other Resources
+                          </div>
+                          <div class="w-full text-gray-500 dark:text-gray-400"></div>
+                        </div>
+                        <svg
+                          class="w-4 h-4 ms-3 rtl:rotate-180 text-[#41788E] dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </label>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-      )}
-</section>
+          </div>
+        )}
+      </section>
 
-{/* Capacity Available */}
-{/* <!-- Modal toggle --> */}
-{/* Modal toggle */}
-<button 
-onClick={toggleModal}
-  className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
-  type="button">
-  Toggle modal
-</button>
-
-{/* Main modal */}
-{isModalOpen && (
-<div 
-  className="overflow-y-auto overflow-x-hidden fixed  z-50 justify-center items-center w-full ">
-  
-  <div className="relative p-4 w-full max-w-md max-h-full">
-    {/* Modal content */}
-    <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-      <button 
-        type="button" 
-        className="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" 
-        >
-        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-        </svg>
-        <span className="sr-only">Close modal</span>
+      {/* Capacity Available */}
+      {/* <!-- Modal toggle --> */}
+      {/* Modal toggle */}
+      <button
+        onClick={() => toggleCapacityModal(true)}
+        className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button"
+      >
+        Toggle modal
       </button>
 
-      <div className="p-4 md:p-5">
-        <svg className="w-10 h-10 text-gray-400 dark:text-gray-500 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-          <path d="M8 5.625c4.418 0 8-1.063 8-2.375S12.418.875 8 .875 0 1.938 0 3.25s3.582 2.375 8 2.375Zm0 13.5c4.963 0 8-1.538 8-2.375v-4.019c-.052.029-.112.054-.165.082a8.08 8.08 0 0 1-.745.353c-.193.081-.394.158-.6.231l-.189.067c-2.04.628-4.165.936-6.3.911a20.601 20.601 0 0 1-6.3-.911l-.189-.067a10.719 10.719 0 0 1-.852-.34 8.08 8.08 0 0 1-.493-.244c-.053-.028-.113-.053-.165-.082v4.019C0 17.587 3.037 19.125 8 19.125Zm7.09-12.709c-.193.081-.394.158-.6.231l-.189.067a20.6 20.6 0 0 1-6.3.911 20.6 20.6 0 0 1-6.3-.911l-.189-.067a10.719 10.719 0 0 1-.852-.34 8.08 8.08 0 0 1-.493-.244C.112 6.035.052 6.01 0 5.981V10c0 .837 3.037 2.375 8 2.375s8-1.538 8-2.375V5.981c-.052.029-.112.054-.165.082a8.08 8.08 0 0 1-.745.353Z"/>
-        </svg>
+      {/* Main modal */}
+      {isCapacityModalOpen && (
+        <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        {/* <!--
+          Background backdrop, show/hide based on modal state.
+      
+          Entering: "ease-out duration-300"
+            From: "opacity-0"
+            To: "opacity-100"
+          Leaving: "ease-in duration-200"
+            From: "opacity-100"
+            To: "opacity-0"
+        --> */}
 
-        <h3 className="mb-1 text-xl font-bold text-gray-900 dark:text-white">Approaching Full Capacity</h3>
-        <p className="text-gray-500 dark:text-gray-400 mb-6">Choosing the right server storage solution is essential for maintaining data integrity.</p>
-
-        <div className="flex justify-between mb-1 text-gray-500 dark:text-gray-400">
-          <span className="text-base font-normal">My storage</span>
-          <span className="text-sm font-semibold text-gray-900 dark:text-white">376,3 of 500 GB used</span>
+        
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            {/* <!--
+              Modal panel, show/hide based on modal state.
+      
+              Entering: "ease-out duration-300"
+                From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                To: "opacity-100 translate-y-0 sm:scale-100"
+              Leaving: "ease-in duration-200"
+                From: "opacity-100 translate-y-0 sm:scale-100"
+                To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            --> */}
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                  <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                    <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                    <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Deactivate account</h3>
+                    <div class="mt-2">
+                      <p class="text-sm text-gray-500">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
+                <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">
-          <div className="bg-orange-500 h-2.5 rounded-full" style={{ width: '85%' }}></div>
-        </div>
-
-        {/* Modal footer */}
-        <div className="flex items-center mt-6 space-x-4 rtl:space-x-reverse">
-          <button 
-            type="button" 
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Upgrade to PRO
-          </button>
-          
-          <button 
-            type="button" 
-            className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-            Cancel
-          </button>
-        </div>
+        
       </div>
-    </div>
-  </div>
-</div>
+      
+      )}
 
-)}
-
-
-
-
-        {/* Cards for services availabel */}
+      {/* Cards for services availabel */}
       {/* <section >
         <h3 className=" text-[#F7A741] text-xl  mt-5 mb-5 px-5">Services Available</h3>
         <article className="flex p-5 m-5 gap-5">
@@ -300,9 +409,9 @@ onClick={toggleModal}
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
@@ -340,9 +449,9 @@ onClick={toggleModal}
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
@@ -380,9 +489,9 @@ onClick={toggleModal}
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
@@ -420,9 +529,9 @@ onClick={toggleModal}
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
