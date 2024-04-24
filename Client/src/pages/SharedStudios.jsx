@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
 import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+
 
 const SharedStudios = () => {
   const [isReserveNowOpen, setIsReserveNowOpen] = useState(false);
@@ -261,7 +263,9 @@ const SharedStudios = () => {
         </section>
         )
       )}
-    
+    <div>
+        <Footer/>
+      </div>
     </div>
   );
 };

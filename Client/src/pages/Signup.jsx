@@ -28,12 +28,8 @@ const Signup = () => {
 
           <div className="w-3/5 flex justify-between p-4 uppercase font-medium">
             <Link className="font-medium  text-[#41788E] ">Sign Up</Link>
-            <Link
-              className="text-[#F5F5F5] font-thin"
-              onClick={() => goTo("/login")}
-            >
-              Login
-            </Link>
+            <a href="/login" className="text-[#F5F5F5] font-thin ">Login</a>
+
           </div>
           <div className="w-8/12 pt-2">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">

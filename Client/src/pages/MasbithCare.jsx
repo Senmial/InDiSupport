@@ -17,6 +17,7 @@ import youtubeIcon from "../assets/images/youtubeIcon.svg";
 import Location from "../assets/images/location.svg";
 import "../styles.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer.jsx";
 
 const MasbithCare = () => {
   const navigate = useNavigate();
@@ -573,6 +574,9 @@ const MasbithCare = () => {
           </div>
         </div>
       </section>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 };

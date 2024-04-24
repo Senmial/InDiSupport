@@ -28,12 +28,7 @@ const Login = () => {
 
           <div className="w-3/5 flex justify-between pt-6 uppercase font-medium">
             <Link className="font-medium  text-[#41788E] ">Login</Link>
-            <Link
-              className="text-[#F5F5F5] font-thin "
-              onClick={() => goTo("/signup")}
-            >
-              Sign Up
-            </Link>
+            <a href="/signup" className="text-[#F5F5F5] font-thin ">Sign Up</a>
           </div>
           <div className="w-8/12 pt-4">
             <div className=" border border-[#FFFFFF] rounded-full py-3 px-4 items-center overflow-hidden flex gap-3">
@@ -50,6 +45,7 @@ const Login = () => {
               </svg>
               <input
                 type="text"
+                required
                 placeholder="Email"
                 className=" outline-none w-full bg-inherit font-thin text-[0.8rem] text-[#380445] "
               />

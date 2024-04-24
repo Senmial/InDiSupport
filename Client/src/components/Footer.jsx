@@ -22,13 +22,13 @@ const Footer = () => {
               <a href={"./"} className="flex items-center mb-3">
                 <img src={logoWhite} className="h-8 me-3" alt="Logo" />
               </a>
-              <span className="self-center text-xl font-med text-[#380445] whitespace-nowrap dark:text-white">Lending a hand today, goes a long way tomorrow</span>
+              <span className="self-center text-xl font-med text-[#FFFFFF] whitespace-nowrap dark:text-white">Lending a hand today, goes a long way tomorrow</span>
 
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-[#380445] uppercase dark:text-white">Resources</h2>
-                  <ul className="text-[#380445] dark:text-gray-400 font-medium">
+                  <h2 className="mb-6 text-sm font-semibold text-[#FFFFFF] uppercase dark:text-white">Resources</h2>
+                  <ul className="text-[#FFFFFF] dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <a href="#" className="hover:underline font-thin">Service Providers</a>
                       </li>
@@ -38,8 +38,8 @@ const Footer = () => {
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-[#380445] uppercase dark:text-white">Follow us</h2>
-                  <ul className="text-[#380445] dark:text-gray-400 font-medium">
+                  <h2 className="mb-6 text-sm font-semibold text-[#FFFFFF] uppercase dark:text-white">Follow us</h2>
+                  <ul className="text-[#FFFFFF] dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <a href="#" className="hover:underline font-thin">Twitter</a>
                       </li>
@@ -49,8 +49,8 @@ const Footer = () => {
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-[#380445] uppercase dark:text-white">Legal</h2>
-                  <ul className="text-[#380445] dark:text-gray-400 font-medium">
+                  <h2 className="mb-6 text-sm font-semibold text-[#FFFFFF] uppercase dark:text-white">Legal</h2>
+                  <ul className="text-[#FFFFFF] dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <a href="#" className="hover:underline font-thin">Privacy Policy</a>
                       </li>

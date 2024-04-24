@@ -23,7 +23,7 @@ const RequesterHome = () => {
     >
       <Navbar />
       <br />
-      <p className=" text-[#380445] font-thin text-2xl  mt-20 flex justify-center">
+      <p className=" text-[#380445] font-bold text-2xl  mt-20 flex justify-center">
         Hi there friend, how may we help you today?
       </p>
       <br />

@@ -10,13 +10,14 @@ import masbithImg from "../assets/images/masbithImg.jpg";
 import healthFrame1 from "../assets/images/healthFrame1.jpg";
 import healthFrame2 from "../assets/images/healthFrame2.jpg";
 import healthFrame3 from "../assets/images/healthFrame3.jpg";
+import Footer from "../components/Footer.jsx";
 
 const ShelterHome = () => {
   return (
     <div className="bg-[#FFfFff] ">
       <Navbar />
       <section
-        className="flex justify-center items-center mt-10 p-10 bg-[#41788E]
+        className="flex justify-center items-center mt-32 p-10 bg-[#41788E]
 ]"
       >
         <img src={healthcareNurse} className=" w-2/4 rounded-md" alt="" />
@@ -196,6 +197,9 @@ const ShelterHome = () => {
         </section>
       </article>
       <br />
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 };

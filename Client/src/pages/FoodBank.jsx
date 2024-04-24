@@ -10,13 +10,14 @@ import foodBankTile1 from "../assets/images/foodBankTile1.jpg";
 import foodBankTile2 from "../assets/images/foodBankTile2.jpg";
 import foodBankTile3 from "../assets/images/foodBankTile3.jpg";
 import foodBankTile4 from "../assets/images/foodBankTile4.jpg";
+import Footer from "../components/Footer.jsx";
 
 const ShelterHome = () => {
   return (
     <div className="bg-[#FFfFff] ">
       <Navbar />
       <section
-        className="flex justify-center items-center mt-10 p-10 bg-[#EB9C41]
+        className="flex justify-center items-center mt-32 p-10 bg-[#EB9C41]
 ]"
       >
         <img src={foodBank} className=" w-2/4 rounded-md" alt="" />
@@ -196,6 +197,9 @@ const ShelterHome = () => {
         </section>
       </article>
       <br />
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 };
