@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import luckycharm from "../assets/images/luckycharm.svg";
-import SearchIcon from "../assets/images/searchIcon.svg";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {

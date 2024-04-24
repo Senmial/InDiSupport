@@ -6,6 +6,7 @@ import FoodBankImg from "../../assets/images/foodBankImg.svg";
 import HealthServicesImg from "../../assets/images/healthServicesImg.svg";
 import bgImg from "../../assets/images/bgHelpingHand.jpg";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer.jsx";
 
 const RequesterHome = () => {
   const navigate = useNavigate();
@@ -99,6 +100,9 @@ const RequesterHome = () => {
         </div>
         </button>
       </section>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 };

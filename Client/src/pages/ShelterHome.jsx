@@ -11,6 +11,7 @@ import alliantImg from "../assets/images/alliantImg.jpg";
 import armTCImg from "../assets/images/armTCImg.jpg";
 import infoIcon from "../assets/images/infoIcon.svg";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer.jsx";
 
 
 
@@ -203,6 +204,9 @@ const ShelterHome = () => {
         </section>
       </article>
       <br />
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 };
