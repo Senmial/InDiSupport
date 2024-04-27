@@ -25,14 +25,14 @@ const Navbar = () => {
         <form className="w-full flex justify-center items-center gap-3 ">
           <label
             for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            class="mb-2 text-sm font-medium text-[#380644] sr-only dark:text-white"
           >
             Search
           </label>
           <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                class="w-4 h-4 text-[#380644] dark:text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -50,17 +50,12 @@ const Navbar = () => {
             <input
               type="search"
               id="default-search"
-              class="block w-[100vwh] p-4 ps-10  text-xs text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#41788E] blue-500 focus:border-[#41788E] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#41788E] dark:focus:border-[#41788E]"
+              class="block w-[100vwh] p-3 ps-10  text-xs text-[#380644] border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#41788E] blue-500 focus:border-[#41788E] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#41788E] dark:focus:border-[#41788E]"
               placeholder="Search services, locations..."
               required
             />
           </div>
-          <button
-              type="submit"
-              class="font-light  text-[#380445] hover:text-[#F7A741]   text-xs  "
-            >
-              Search
-            </button>
+          
         </form>
         </div>
         <div className=" flex justify-center items-center gap-5 font-thin text-md text-[#380445] ">

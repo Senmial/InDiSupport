@@ -2,3 +2,7 @@
 *{
   font-family: "Inter", sans-serif;
 }
+
+@media (min-width: 768px) {
+  /* Styles for medium devices (tablets) */
+}

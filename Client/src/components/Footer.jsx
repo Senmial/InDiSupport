@@ -22,8 +22,12 @@ const Footer = () => {
               <a href={"./"} className="flex items-center mb-3">
                 <img src={logoWhite} className="h-8 me-3" alt="Logo" />
               </a>
-              <span className="self-center text-xl font-med text-[#FFFFFF] whitespace-nowrap dark:text-white">Lending a hand today, goes a long way tomorrow</span>
-
+              <span className="self-center text-xl font-thin text-[#FFFFFF] whitespace-nowrap dark:text-white">Lending a hand today, goes a long way tomorrow</span>
+            <form action="subscribe" className="mt-5">
+                <p className="text-[#F7A741]">Subscribe to our Newsletter</p>
+            <input type="text" placeholder="Email Address" className="pl-2 py-2 pr-20 rounded-sm text-sm" />
+            <button className=" bg-[#F7A741] text-white p-2 text-xs rounded-sm mx-3">Subscribe</button>
+            </form>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
@@ -61,7 +65,7 @@ const Footer = () => {
               </div>
           </div>
       </div>
-      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <hr className="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" className="hover:underline">InDiSupport™</a>. All Rights Reserved.
           </span>
