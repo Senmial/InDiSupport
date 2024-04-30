@@ -76,7 +76,7 @@ const ShelterHome = () => {
       <br />
       <article className="">
         <section className="flex flex-nowrap p-10 gap-20">
-          <div className="  rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl" onClick={() => goTo('/masbithcare')}>
+          <div className="  rounded-2xl  w-2/5 h-full overflow-hidden border backdrop-blur-xl" onClick={() => goTo('/masbithcare')}>
             <img src={masbithImg} className="" alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Masbith Care</p>
@@ -107,7 +107,7 @@ const ShelterHome = () => {
             </div>
           </div>
           
-          <div className="rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl ">
+          <div className="rounded-2xl  w-2/5 h-full overflow-hidden border backdrop-blur-xl ">
             <img src={lewanImg} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Lewan Training Institute</p>
@@ -140,7 +140,7 @@ const ShelterHome = () => {
         </section>
         <br />
         <section className="flex flex-nowrap p-10 gap-20">
-          <div className="rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
+          <div className="rounded-2xl  w-2/5 h-full overflow-hidden border backdrop-blur-xl">
             <img src={alliantImg} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Alliant Union Services</p>
@@ -171,8 +171,8 @@ const ShelterHome = () => {
             </div>
           </div>
           
-          <div className=" rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
-            <img src={armTCImg} alt="" />
+          <div className=" rounded-2xl  w-2/5 h-full overflow-hidden border backdrop-blur-xl">
+            <img src={armTCImg} className="h-3/4" alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Arm The Child Foundation</p>
               <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">

@@ -23,9 +23,9 @@ const Footer = () => {
                 <img src={logoWhite} className="h-8 me-3" alt="Logo" />
               </a>
               <span className="self-center text-xl font-thin text-[#FFFFFF] whitespace-nowrap dark:text-white">Lending a hand today, goes a long way tomorrow</span>
-            <form action="subscribe" className="mt-5">
-                <p className="text-[#F7A741]">Subscribe to our Newsletter</p>
-            <input type="text" placeholder="Email Address" className="pl-2 py-2 pr-20 rounded-sm text-sm" />
+            <form action="subscribe" className="mt-5 ">
+                <p className="text-[#F7A741] text-xs uppercase">Subscribe to our Newsletter</p>
+            <input type="text" placeholder="Email Address" className="pl-2 py-2 pr-20 mt-2 rounded-sm text-sm" />
             <button className=" bg-[#F7A741] text-white p-2 text-xs rounded-sm mx-3">Subscribe</button>
             </form>
           </div>

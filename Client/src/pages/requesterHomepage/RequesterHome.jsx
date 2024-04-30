@@ -23,13 +23,13 @@ const RequesterHome = () => {
     >
       <Navbar />
       <br />
-      <p className=" text-[#380445] font-bold text-2xl  mt-20 flex justify-center">
+      <p className=" text-[#380445] font-bold text-2xl  mt-24 flex justify-center">
         Hi there friend, how may we help you today?
       </p>
       <br />
       <section className="flex flex-col justify-center items-center gap-3">
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-3/4 shadow-md overflow-hidden border flex "
+          className="backdrop-blur-xl p-5 rounded-2xl  w-2/4 shadow-md overflow-hidden border flex "
           onClick={() => goTo('/shelterhome')}
         >
           <div className="flex text-justify">
@@ -54,7 +54,7 @@ const RequesterHome = () => {
 
         <br />
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-3/4 shadow-md overflow-hidden border flex "
+          className="backdrop-blur-xl p-5 rounded-2xl  w-2/4 shadow-md overflow-hidden border flex "
           onClick={() => goTo('/foodbank')}
         >
         <div className="flex text-justify">
@@ -78,7 +78,7 @@ const RequesterHome = () => {
         </button>
         <br />
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-3/4 shadow-md overflow-hidden border flex "
+          className="backdrop-blur-xl p-5 rounded-2xl  w-2/4 shadow-md overflow-hidden border flex "
           onClick={() => goTo('/healthcare')}
         >
         <div className="flex text-justify">
