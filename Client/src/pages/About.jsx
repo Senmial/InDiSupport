@@ -15,10 +15,9 @@ const About = () => {
     >
       <div className="flex flex-col justify-center self-center gap-3 p-3  w-5/6 h-3/4 mb-5 ">
         
-        <div className="relative flex flex-col p-10  rounded-t-lg bg-white w-ful">
-        <img src={luckycharmTwo} className="absolute top-0 right-0" alt="" />
+        <div className="relative flex flex-col p-10  rounded-t-lg w-ful">
 
-          <p className="text-[#380445] font-med text-3xl text-center text-left  ">
+          <p className="text-[#FFFFFF] font-med text-3xl text-center  ">
             About Us 
           </p>
 
@@ -45,7 +44,6 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 ">
           {/* Our Mission Card */}
           <section className="relative bg-white p-2  border shadow-2xl ">
-          <img src={luckycharmTwo} className="absolute top-1 right-0" alt="" />
 
             <div className="flex justify-center items-center pt-10  ">
               <img src={missionImg} className="w-3/5 " alt="" />
@@ -64,7 +62,6 @@ const About = () => {
 
           {/* Our Values Card */}
           <section className="relative bg-white  p-2 border shadow-2xl   ">
-          <img src={luckycharmTwo} className="absolute top-1 right-0" alt="" />
 
             <div className="flex justify-center">
               <img src={valuesImg} className="w-2/4" alt="" />
@@ -92,7 +89,6 @@ const About = () => {
         <div className="flex justify-center">
           {/* Our Vision Card */}
           <section className="relative w-2/4 bg-white  p-2 border shadow-2xl ">
-          <img src={luckycharmTwo} className="absolute top-1 right-0" alt="" />
 
             <div className="flex justify-center mt-5 ">
               <img src={visionImg} className="w-3/4" alt="" />

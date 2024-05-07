@@ -75,7 +75,7 @@ const ShelterHome = () => {
       </section>
       <br />
       <article className="">
-        <section className="flex flex-nowrap p-10 gap-20">
+        <section className="flex justify-center items-center p-10 gap-20">
           <div className="  rounded-2xl  w-2/5 h-full overflow-hidden border backdrop-blur-xl" onClick={() => goTo('/masbithcare')}>
             <img src={masbithImg} className="" alt="" />
             <div className="p-5">
@@ -139,7 +139,7 @@ const ShelterHome = () => {
           </div>
         </section>
         <br />
-        <section className="flex flex-nowrap p-10 gap-20">
+        <section className="flex justify-center items-center p-10 gap-20">
           <div className="rounded-2xl  w-2/5 h-full overflow-hidden border backdrop-blur-xl">
             <img src={alliantImg} alt="" />
             <div className="p-5">

@@ -12,7 +12,7 @@ import foodBankTile3 from "../assets/images/foodBankTile3.jpg";
 import foodBankTile4 from "../assets/images/foodBankTile4.jpg";
 import Footer from "../components/Footer.jsx";
 
-const ShelterHome = () => {
+const FoodBank = () => {
   return (
     <div className="bg-[#FFfFff] ">
       <Navbar />
@@ -68,8 +68,8 @@ const ShelterHome = () => {
       </section>
       <br />
       <article className="">
-        <section className="flex flex-nowrap p-10 gap-20">
-          <div className="  rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
+      <section className="flex justify-center items-center p-10 gap-20">      
+      <div className="  rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
             <img src={foodBankTile1} className="" alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Farda Drive-Thru Food Bank</p>
@@ -100,7 +100,7 @@ const ShelterHome = () => {
             </div>
           </div>
           
-          <div className="rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl ">
+          <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl ">
             <img src={foodBankTile2} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Open-Hands </p>
@@ -132,8 +132,8 @@ const ShelterHome = () => {
           </div>
         </section>
         <br />
-        <section className="flex flex-nowrap p-10 gap-20">
-          <div className="rounded-2xl  w-3/5 overflow-hidden border backdrop-blur-xl">
+        <section className="flex justify-center items-center p-10 gap-20">          
+        <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
             <img src={foodBankTile3} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">The Distro</p>
@@ -164,7 +164,7 @@ const ShelterHome = () => {
             </div>
           </div>
           
-          <div className=" rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
+          <div className=" rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
             <img src={foodBankTile4} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Charity Gate</p>
@@ -204,4 +204,4 @@ const ShelterHome = () => {
   );
 };
 
-export default ShelterHome;
+export default FoodBank;

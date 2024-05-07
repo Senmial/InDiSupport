@@ -12,7 +12,7 @@ import healthFrame2 from "../assets/images/healthFrame2.jpg";
 import healthFrame3 from "../assets/images/healthFrame3.jpg";
 import Footer from "../components/Footer.jsx";
 
-const ShelterHome = () => {
+const Healthcare = () => {
   return (
     <div className="bg-[#FFfFff] ">
       <Navbar />
@@ -68,8 +68,8 @@ const ShelterHome = () => {
       </section>
       <br />
       <article className="">
-        <section className="flex flex-nowrap p-10 gap-20">
-          <div className="  rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
+      <section className="flex justify-center items-center p-10 gap-20">          
+      <div className="  rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
             <img src={masbithImg} className="" alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Masbith Care</p>
@@ -100,7 +100,7 @@ const ShelterHome = () => {
             </div>
           </div>
           
-          <div className="rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl ">
+          <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl ">
             <img src={healthFrame1} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Angeles Children Hospital</p>
@@ -132,8 +132,8 @@ const ShelterHome = () => {
           </div>
         </section>
         <br />
-        <section className="flex flex-nowrap p-10 gap-20">
-          <div className="rounded-2xl  w-3/5 overflow-hidden border backdrop-blur-xl">
+        <section className="flex justify-center items-center p-10 gap-20">          
+        <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
             <img src={healthFrame2} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Tomahawk Family Care</p>
@@ -164,7 +164,7 @@ const ShelterHome = () => {
             </div>
           </div>
           
-          <div className=" rounded-2xl  w-3/6 overflow-hidden border backdrop-blur-xl">
+          <div className=" rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
             <img src={healthFrame3} alt="" />
             <div className="p-5">
               <p className="text-[#F7A741]">Vidici Women's Hospital</p>
@@ -204,4 +204,4 @@ const ShelterHome = () => {
   );
 };
 
-export default ShelterHome;
+export default Healthcare;
