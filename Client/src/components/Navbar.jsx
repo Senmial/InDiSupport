@@ -10,22 +10,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#FFFFFF] p-1 h-24 px-14 py-5 w-full fixed top-0 z-50 border-y ">
+    <div className="bg-[#FFFFFF] p-1 h-20 px-14 w-full fixed top-0 z-50 border-y ">
       <nav className="flex items-center justify-between ">
-        <div className="flex items-center">
+        <div className="flex  items-center">
           <img
             src={logo}
-            className="w-1/2 "
+            className="w-1/2  "
             alt="logo"
             onClick={() => goTo("/requesterhome")}
           />
         </div>
 
 <div className="">
-        <form className="w-full flex justify-center items-center gap-3 ">
+        <form className=" flex justify-center items-center gap-3 ">
           <label
             for="default-search"
-            class="mb-2 text-sm font-medium text-[#380644] sr-only dark:text-white"
+            class="mb-2 text-sm font-medium text-[#380644] sr-only "
           >
             Search
           </label>
@@ -62,13 +62,13 @@ const Navbar = () => {
           
 
           <button
-            class="text-white bg-[#380445] hover:bg-[#F7A741]  font-medium rounded-md text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white bg-[#380445] hover:bg-[#F7A741]  font-light rounded-md text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             type="button"
           >
             Donate{" "}
           </button>
           <button
-            class=" text-[#F7A741] hover:text-[#380445] font-medium  text-sm px-5 py-2.5 text-center inline-flex items-center"
+            class=" text-[#F7A741] hover:text-[#380445] font  text--lightsm px-5 py-2.5 text-center inline-flex items-center"
           >
             Volunteer{" "}
           </button>
@@ -89,7 +89,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <img src={luckycharm} className="absolute top-0 right-0" alt="" />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar.jsx";
-import luckycharmTwo from "../../assets/images/luckycharmTwo.svg";
+import luckycharm from "../../assets/images/luckycharm.svg";
 import shelterImg from "../../assets/images/shelterImg.svg";
 import FoodBankImg from "../../assets/images/foodBankImg.svg";
 import HealthServicesImg from "../../assets/images/healthServicesImg.svg";
@@ -23,79 +23,59 @@ const RequesterHome = () => {
     >
       <Navbar />
       <br />
-      <p className=" text-[#380445] font-bold text-2xl  mt-24 flex justify-center">
+      <p className=" text-[#380445] font-thin text-2xl  mt-32 flex justify-center items-center">
         Hi there friend, how may we help you today?
       </p>
       <br />
-      <section className="flex flex-col justify-center items-center gap-3">
+      <section className="flex justify-center items-center gap-5 mt-10 mb-24 ">
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-2/4 shadow-md overflow-hidden border flex "
+          className="backdrop-blur-xl p-5 rounded-tl-3xl rounded-br-3xl  w-1/4 shadow-md overflow-hidden border flex flex-col justify-center hover:scale-110"
           onClick={() => goTo('/shelterhome')}
         >
-          <div className="flex text-justify">
-            <img src={shelterImg} className="p-5" alt="" />
+            <img src={shelterImg} className="p-5 w-full" alt="" />
+          <div className="flex">
             <div className=" flex-col px-5">
-              <img
-                src={luckycharmTwo}
-                className=" absolute top-0 right-0"
-                alt=""
-              />
-              <p className="text-[#F7A741] font-bold text-lg">Shelter</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <p className="font-bold">Find available shelter near you. </p>
-                <p>
+              
+              <p className="text-[#F7A741] font-md font-bold text-2xl">Shelter</p>
+                <p className=" text-md font-extralight text-[#380445] mt-4">
                   Find available shelter near you which provide those in need
                   with a bed to sleep for a specific number of days.
                 </p>
-              </div>
             </div>
           </div>
         </button>
 
         <br />
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-2/4 shadow-md overflow-hidden border flex "
+          className="backdrop-blur-xl p-5 rounded-tr-3xl rounded-bl-3xl  w-1/4 shadow-md overflow-hidden border hover:scale-110"
           onClick={() => goTo('/foodbank')}
         >
-        <div className="flex text-justify">
-          <img src={FoodBankImg} className="p-5" alt="" />
+          <img src={FoodBankImg} className="p-5 w-full" alt="" />
+        <div className="flex ">
           <div className=" flex-col px-5">
-            <img
-              src={luckycharmTwo}
-              className=" absolute top-0 right-0"
-              alt=""
-            />
-            <p className="text-[#F7A741] font-bold text-lg">Food Banks</p>
-            <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-              <p className="font-bold">Find available food banks near you. </p>
-              <p>
-                Find available food banks near you whichh provides food to those
+            
+            <p className="text-[#F7A741] font-md font-bold text-2xl">Food Banks</p>
+            <p className=" text-md font-extralight text-[#380445] mt-4">
+
+                Find available food banks near you which provides food to those
                 in need at specific times and on specific days.
               </p>
-            </div>
           </div>
         </div>
         </button>
         <br />
         <button
-          className="backdrop-blur-xl p-5 rounded-2xl  w-2/4 shadow-md overflow-hidden border flex "
+          className="backdrop-blur-xl p-5 rounded-tl-3xl rounded-br-3xl  w-1/4 shadow-md overflow-hidden border hover:scale-110 "
           onClick={() => goTo('/healthcare')}
         >
-        <div className="flex text-justify">
-          <img src={HealthServicesImg} className="p-5" alt="" />
+          <img src={HealthServicesImg} className="p-5 w-11/12 " alt="" />
+        <div className="flex">
           <div className=" flex-col px-5">
-            <img
-              src={luckycharmTwo}
-              className=" absolute top-0 right-0"
-              alt=""
-            />
-            <p className="text-[#F7A741] font-bold text-lg">Health Care</p>
-            <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-              <p className="font-bold">
-                Find available healthcare services near you.{" "}
-              </p>
-              <p>Find available healthcare and emergency services near you.</p>
-            </div>
+            
+            <p className="text-[#F7A741] font-md font-bold text-2xl">Health Care</p>
+              
+            <p className=" text-md font-extralight text-[#380445] mt-4">
+Find available healthcare, counselling, therapy, medical professionals and emergency services near you.</p>
           </div>
         </div>
         </button>
