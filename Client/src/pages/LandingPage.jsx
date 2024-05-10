@@ -25,7 +25,7 @@ const Home = () => {
             <p className="italic text-[#380445]">
               Lending a hand today, goes a long way tomorrow.
             </p>
-            <p className="pt-10 text-center text-md">
+            <p className="pt-10 text-center text-md text-[#380445]">
               InDiSupport, a non-governmental organization (NGO), is dedicated
               to addressing the urgent needs of internally displaced Nigerians.
             </p>

@@ -66,18 +66,25 @@ const FoodBank = () => {
           </select>
         </div>
       </section>
-      <br />
-      <article className="">
-      <section className="flex justify-center items-center p-10 gap-20">      
-      <div className="  rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
-            <img src={foodBankTile1} className="" alt="" />
+      <hr className="m-5" />
+      <article className="ml-10">
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={foodBankTile1} className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Farda Drive-Thru Food Bank</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Farda Drive-Thru Food Bank</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    Weekly drive-thru food bank - from donations we gather ...
+                  Weekly drive-thru food bank - from donations we gather ...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
@@ -89,26 +96,27 @@ const FoodBank = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} className="hover:bg-[#F7A741]" alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-          
-          <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl ">
-            <img src={foodBankTile2} alt="" />
+        </button>
+        <hr className="m-5" />
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={foodBankTile2} className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Open-Hands </p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Open-Hands </p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    We collect donations and distribute food items...
+                  We collect donations and distribute food items...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
@@ -120,28 +128,27 @@ const FoodBank = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-        </section>
-        <br />
-        <section className="flex justify-center items-center p-10 gap-20">          
-        <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
-            <img src={foodBankTile3} alt="" />
+        </button>
+        <hr className="m-5" />
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={foodBankTile3}  className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">The Distro</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >The Distro</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    God provides, we distribute...
+                  God provides, we distribute...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
@@ -153,26 +160,28 @@ const FoodBank = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-          
-          <div className=" rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
-            <img src={foodBankTile4} alt="" />
+        </button>
+        <hr className="m-5" />
+        
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={foodBankTile4}  className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Charity Gate</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Charity Gate</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    Food bank opens 8am every Tuesdays, Wed...
+                  Food bank opens 8am every Tuesdays, Wed...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
@@ -184,19 +193,13 @@ const FoodBank = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-        </section>
+        </button>
+        <hr className="m-5" />
       </article>
       <br />
+
       <div>
         <Footer/>
       </div>

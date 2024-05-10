@@ -66,15 +66,22 @@ const Healthcare = () => {
           </select>
         </div>
       </section>
-      <br />
-      <article className="">
-      <section className="flex justify-center items-center p-10 gap-20">          
-      <div className="  rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
-            <img src={masbithImg} className="" alt="" />
+      <hr className="m-5" />
+      <article className="ml-10">
+        <button onClick={() => goTo('/masbithcare')}>
+          <div className="flex items-center">
+            <img src={masbithImg} className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Masbith Care</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Masbith Care</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
                     Disability Care, Housing Assistance, Shelter, Healthcare...
@@ -89,26 +96,27 @@ const Healthcare = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} className="hover:bg-[#F7A741]" alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-          
-          <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl ">
-            <img src={healthFrame1} alt="" />
+        </button>
+        <hr className="m-5" />
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={healthFrame1} className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Angeles Children Hospital</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Angeles Children Hospital</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    Children Care, Pediatrician, Babysitting, Creche...
+                  Children Care, Pediatrician, Babysitting, Creche...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
@@ -120,28 +128,27 @@ const Healthcare = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-        </section>
-        <br />
-        <section className="flex justify-center items-center p-10 gap-20">          
-        <div className="rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
-            <img src={healthFrame2} alt="" />
+        </button>
+        <hr className="m-5" />
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={healthFrame2} className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Tomahawk Family Care</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Tomahawk Family Care</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    General Practitioner, Family Care, Walk-in Clinic...
+                  General Practitioner, Family Care, Walk-in Clinic...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
@@ -153,49 +160,46 @@ const Healthcare = () => {
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-          
-          <div className=" rounded-2xl  w-2/5 overflow-hidden border backdrop-blur-xl">
-            <img src={healthFrame3} alt="" />
+        </button>
+        <hr className="m-5" />
+        
+        <button onClick={() => goTo('/')}>
+          <div className="flex items-center">
+            <img src={healthFrame3}  className="w-1/4 m-5 rounded-md" alt="" />
             <div className="p-5">
-              <p className="text-[#F7A741]">Vidici Women's Hospital</p>
-              <div className="flex flex-col gap-4 text-[#380445] font-light text-sm mt-4">
-                <div className="flex gap-5">
+              <div className="flex ">
+                <p className="text-[#F7A741] text-2xl font-bold ml-10" >Vidici Women's Hospital</p>
+                {/* <img
+                  src={LikeIcon}
+                  className="hover:bg-[#F7A741] flex  mr-10 "
+                  alt=""
+                /> */}
+              </div>
+              <div className="flex flex-col  gap-4 text-[#380445] font-semibold text-lg mt-4">
+                <div className="flex gap-5 ">
                   <img src={infoIcon} alt="" />
                   <p>
-                    Maternity Care, Walk-in Clinic, Family Planning, Counselling, Cancer Prevention ...
+                  Maternity Care, Walk-in Clinic, Family Planning, Counselling, Cancer Prevention ...
                   </p>
                 </div>
                 <div className="flex gap-5 ">
                   <img src={PersonIcon} alt="" />
-                  <p>Internally Displaced Women</p>
+                  <p>Internally Displaced Women and Children</p>
                 </div>
                 <div className="flex gap-5">
                   <img src={PhoneIcon} alt="" />
                   <p>(+234) 75838593</p>
                 </div>
               </div>
-              <div className="flex justify-end">
-                <img src={LikeIcon} alt="" />
-                <img
-                  src={bottomcircle}
-                  className=" absolute bottom left-0 rounded-bl-lg"
-                  alt=""
-                />
-              </div>
             </div>
           </div>
-        </section>
+        </button>
+        <hr className="m-5" />
       </article>
+      <br />
+
       <br />
       <div>
         <Footer/>
