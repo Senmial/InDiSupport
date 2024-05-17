@@ -9,32 +9,24 @@ const Home = () => {
     navigate(path);
   };
   return (
-    <div className="flex">
-      <div>
-        <img src={bgImg} className="min-h-screen" alt="" />
-      </div>
-          {/* <nav className="flex justify-end  py-10">
-            <ul>
-              <a href="/about" className="text-[#000000] text-sm">
-                About InDiSupport
-              </a>
-            </ul>
-          </nav> */}
-          <div className="flex flex-col justify-center items-center p-10 ">
+    <div className="">
+        <img src={bgImg} className="w-full h-screen object-cover absolute " alt="" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center p-10 rounded-md w-2/4 backdrop-blur-md">
             <img src={volunteer4} className="w-3/4 " alt="" />
-            <p className="italic text-[#380445]">
+            <p className="italic text-[#FFFFFF] font-thin">
               Lending a hand today, goes a long way tomorrow.
             </p>
-            <p className="pt-10 text-center text-md text-[#380445]">
+            {/* <p className="pt-10 text-center text-md text-[#380445]">
               InDiSupport, a non-governmental organization (NGO), is dedicated
               to addressing the urgent needs of internally displaced Nigerians.
-            </p>
-            <div className="flex justify-center mt-5 gap-10 pt-10">
+            </p> */}
+            <div className="flex justify-center items-center mt-5 pt-10 ">
+              
               <button
-                className=" rounded-full text-[#FFFFFF] p-4 bg-[#41788E] drop-shadow-md w-40 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]"
+                className="rounded-full text-[#F7A741]   text-2xl  hover:text-[#380445] underline"
                 onClick={() => goTo("/login")}
               >
-                LOGIN
+                Proceed 
               </button>
               <button
                 className="rounded-full text-[#FFFFFF] p-4 bg-[#F7A741] drop-shadow-md w-40 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]"
@@ -43,7 +35,7 @@ const Home = () => {
                 SIGNUP
               </button>
             </div>
-          </div>
+          </div> 
         </div>
   );
 };
