@@ -18,14 +18,18 @@ const Login = () => {
   // };
 
   return (
-    <div className="flex  ">
-      <div>
-        <img src={bgImg} className="  min-h-screen" alt="" />
+    <div className="flex flex-col lg:flex-row ">
+      <div className=" w-full lg:w-1/2">
+        <img
+          src={bgImg}
+          className="w-full h-auto lg:h-screen object-cover"
+          alt="Background"
+        />
       </div>
-      <div className=" w-5/12  m-5 flex justify-center items-center">
-        <div className="max-h-screen overflow-hidden">
+      <div className=" w-full lg:w-1/2 m-5 flex justify-center items-center">
+        <div className="max-h-screen overflow-hidden w-full">
           <div className="flex flex-col justify-center items-center">
-            <img src={login1} className="w-2/5 pt-4" alt="" />
+            <img src={login1} className="w-2/5 pt-4  " alt="" />
             <p className="font-small text-[#380445] text-[1rem] pt-3 ">
               Welcome to InDiSupport
             </p>
@@ -104,8 +108,6 @@ const Login = () => {
             >
               Login
             </button>
-            
-            
           </div>
         </div>
       </div>

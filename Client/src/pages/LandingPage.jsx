@@ -17,10 +17,10 @@ const Home = () => {
       />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center p-5 sm:p-10 rounded-md w-3/4 sm:w-2/4 backdrop-blur-xl ">
         <img src={volunteer4} className="w-3/4 md:w-2/4 " alt="" />
-        <p className=" text-[#FFFFFF] font-extralight mt-5 text-sm sm:text-md ">
+        <p className=" text-[#FFFFFF] text-center font-extralight mt-5 text-sm sm:text-md ">
           Lending a hand today, goes a long way tomorrow.
         </p>
-        <p className="pt-10 text-center text-sm sm:text-md font-thin text-[#FFFFFF]">
+        <p className="pt-10 text-center text-sm sm:text-md font-normal text-[#FFFFFF]">
           InDiSupport, a non-governmental organization (NGO), is dedicated to
           addressing the urgent needs of internally displaced Nigerians through
           the helping hands of volunteers.

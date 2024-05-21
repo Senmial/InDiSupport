@@ -1,10 +1,5 @@
 import React from "react";
 import login1 from "../assets/images/login1.svg";
-import { Link } from "react-router-dom";
-import luckycharm from "../assets/images/luckycharm.svg";
-import facebooklogo from "../assets/images/facebooklogo.svg";
-import googlelogo from "../assets/images/googlelogo.svg";
-import bottomcircle from "../assets/images/bottomcircle.svg";
 import bgImg from "../assets/images/bgHelpingHand.jpg";
 import { useNavigate } from "react-router-dom";
 
