@@ -26,7 +26,7 @@ const Login = () => {
           alt="Background"
         />
       </div>
-      <div className=" w-full lg:w-1/2 m-5 flex justify-center items-center">
+      <div className=" w-full lg:w-1/2  flex justify-center items-center">
         <div className="max-h-screen overflow-hidden w-full">
           <div className="flex flex-col justify-center items-center">
             <img src={login1} className="w-2/5 pt-4  " alt="" />
@@ -34,12 +34,12 @@ const Login = () => {
               Welcome to InDiSupport
             </p>
 
-            <div className="w-3/5 flex justify-center pt-12 uppercase font-medium">
+            <div className=" flex justify-center pt-12 uppercase font-medium">
               <p className="font-medium  text-[#41788E] text-center">Login</p>
             </div>
 
             {/* Email Input */}
-            <form action="login" className="w-3/4 py-3 bg-inherit ">
+            <form action="login" className="w-3/5 py-3 bg-inherit ">
               <div className=" border  border-[#41788E]  rounded-md py-3 px-4 items-center  overflow-hidden flex gap-3">
                 <div className="flex  gap-2 overflow-hidden">
                   <input

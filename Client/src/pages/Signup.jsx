@@ -9,11 +9,11 @@ const Signup = () => {
     navigate(path);
   };
   return (
-    <div className="flex">
-      <div>
-        <img src={bgImg} className="  min-h-screen" alt="" />
+    <div className="flex flex-col lg:flex-row ">
+      <div className="w-full lg:w-1/2">
+        <img src={bgImg} className="w-full h-auto lg:h-screen object-cover" alt="" />
       </div>
-      <div className=" w-5/12  m-5 flex justify-center items-center">
+      <div className=" w-full lg:w-1/2  flex justify-center items-center">
         <div className="max-h-screen overflow-hidden">
           <div className="flex flex-col justify-center items-center">
             <img src={login1} className="w-2/5 pt-2" alt="" />
