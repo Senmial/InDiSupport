@@ -27,16 +27,16 @@ const RequesterHome = () => {
         Hi there friend, how may we help you today?
       </p>
       <br />
-      <section className="flex justify-center items-center gap-5 mt-10 mb-24 ">
+      <section className="flex justify-center items-center gap-5 mt-10 mb-24 lg:flex-row sm:flex-col ">
         <button
-          className="backdrop-blur-xl p-5 rounded-tl-3xl rounded-br-3xl  w-1/4 shadow-md overflow-hidden border flex flex-col justify-center hover:scale-110"
+          className="backdrop-blur-xl p-5 rounded-tl-3xl rounded-br-3xl  w-1/4  shadow-md overflow-hidden border flex flex-col justify-center hover:scale-110"
           onClick={() => goTo('/shelterhome')}
         >
             <img src={shelterImg} className="p-5 w-full" alt="" />
           <div className="flex">
             <div className=" flex-col px-5">
               
-              <p className="text-[#F7A741] font-md font-bold text-2xl">Shelter</p>
+              <p className="text-[#F7A741] font-md font-bold text-2xl ">Shelter</p>
                 <p className=" text-md font-extralight text-[#380445] mt-4">
                   Find available shelter near you which provide those in need
                   with a bed to sleep for a specific number of days.
@@ -68,9 +68,9 @@ const RequesterHome = () => {
           className="backdrop-blur-xl p-5 rounded-tl-3xl rounded-br-3xl  w-1/4 shadow-md overflow-hidden border hover:scale-110 "
           onClick={() => goTo('/healthcare')}
         >
-          <img src={HealthServicesImg} className="p-5 w-11/12 " alt="" />
+          <img src={HealthServicesImg} className="p-5 w-full " alt="" />
         <div className="flex">
-          <div className=" flex-col px-5">
+          <div className=" flex-col px-2">
             
             <p className="text-[#F7A741] font-md font-bold text-2xl">Health Care</p>
               
