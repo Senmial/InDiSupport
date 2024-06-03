@@ -1,21 +1,31 @@
 import React, { useState } from "react";
 import login1 from "../../assets/images/login1.svg";
-import facebooklogo from "../../assets/images/facebooklogo.svg";
-import googlelogo from "../../assets/images/googlelogo.svg";
 import bgImg from "../../assets/images/bgHelpingHand.jpg";
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
   const navigate = useNavigate();
-  // const [showPassword, setShowPassword] = useState(False);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const goTo = (path) => {
-    navigate(path);
-  };
 
-  // const togglePasswordVisibility = () => {
-  //   setShowPassword(!showPassword);
-  // };
+
+ const validateForm = (e) => {
+  e.preventDefault();
+  if (email.length === 0) {
+    alert ("Please enter a valid email");
+    return; 
+  }
+  if (password.length < 8) {
+   alert("Password length should be more than 8 characters");
+   return ;
+ }
+
+      // If validation passes, navigate to 'requesterhome'
+  navigate("/requesterhome");
+
+ };
 
   return (
     <div className="flex flex-col lg:flex-row ">
@@ -39,11 +49,13 @@ const Login = () => {
             </div>
 
             {/* Email Input */}
-            <form action="login" className="w-3/5 py-3 bg-inherit ">
+            <form onSubmit= {validateForm} name="loginForm" action="login" className="w-3/5 py-3 bg-inherit ">
               <div className=" border  border-[#41788E]  rounded-md py-3 px-4 items-center  overflow-hidden flex gap-3">
                 <div className="flex  gap-2 overflow-hidden">
                   <input
                     type="text"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder="Email"
                     className="outline-none w-screen   font-thin text-[0.9rem] text-[#380445] bg-inherit ps-1"
@@ -55,8 +67,10 @@ const Login = () => {
                 <div className="flex  gap-2 overflow-hidden">
                   <input
                     type="password"
+                    value={password}
                     required
                     placeholder="Password"
+                    onChange={(e) => setPassword(e.target.value)}
                     className="outline-none w-screen   font-thin text-[0.9rem] text-[#380445] bg-inherit ps-1"
                   />
                   {/* <button onClick={()=>togglePasswordVisibility(true)}></button> */}
@@ -95,7 +109,7 @@ const Login = () => {
               <a
                 href="#"
                 className="text-sm t text-[#F7A741] hover:text-[#41788E] dark:text-blue-500"
-                onClick={() => goTo("/signup")}
+                onClick={() => navigate("/signup")}
               >
                 Create account
               </a>
@@ -104,7 +118,6 @@ const Login = () => {
             <button
               type="submit"
               className="rounded-full bg-[#F7A741] w-4/12 flex justify-center mt-10 mb-5 text-[1rem] text-[#FFFFFF] py-3 hover:bg-[#380445] focus:ring-2 focus:ring-[#380445]"
-              onClick={() => goTo("/requesterhome")}
             >
               Login
             </button>
